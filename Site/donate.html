@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light &amp; Salt -- Donate</title>
+
+    <!-- ============== FONTAWESOME CDN ================= -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="donate.css">
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container container">
+            <div class="nav__left">
+                <div class="logo">
+                    <img src="images/Logo1.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav__right">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                    <li><a href="../Blog/index.html">Blog</a></li>
+                    <li><a href="#donationCard" class="nav__active">Donate</a></li>
+                </ul>
+             
+            </div>
+            <button id="show__navbar-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="hide__navbar-btn" class="nav-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+    </nav>
+
+    <main>
+        <section class="main-bg">
+            <div class="background-img">
+                <!-- <img src="images/donate-bg-2.png" alt=""> -->
+            </div>
+        </section>
+        <section class="main__content">
+            <div class="cta__container container">
+                <aside class="summary">
+
+                    <h3 class="summary-title">Give them a chance to shine, donate now !</h3>
+                    <p>Every child deserves a bright future, but not every child has the opportunity to achieve their full potential. 
+                        <br>
+                    Millions of children around the world lack access to basic needs such as food, education, and healthcare. That’s why we need your help. Your donation can make a difference in the lives of these children. You can provide them with nutritious meals, quality education, and essential healthcare. You can give them a chance to shine.
+                        <br>
+                        One click isn't just a contribution, it's a promise. Be the reason a child smiles, learns, and thrives. Donate today, and watch hope bloom.
+                    </p>
+                    <div class="summary-img">
+                        <img src="images/donate-bg-6.png" alt="" class="summary-img">
+                    </div>
+                    
+                </aside>
+                <aside class="donation" id="donationCard">
+                    <div class="donation-header">
+                        <h3> Donate now <br> Choose amount</h3>
+                    </div>
+                    <div class="donation__container">
+                        <form action="" class="donation-form">
+                            <div class="donation-amount-field">
+                                <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                <input type="number" name="DonationAmount" placeholder="Enter the amount" required>
+                            </div>
+                            
+                            <div class="donation-submit">
+                                <button type="submit" class="btn-primary"><span>Next</span><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="quick-links">
+                <h2>Quick links</h2>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Blog</a>
+                <a href="#donationCard">Donate</a>
+            </div>
+            <div class="contact-links">
+                <h2>Joins us on</h2>
+                <p>+243990000000</p>
+                <p>info@lightandsalt.com</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div>
+                    <a href="#donationCard" class="btn-primary">Donate now</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; Gitop Tech 2024 </p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
