@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Light & Salt - Organisation Humanitaire | Aide aux Enfants RDC</title>
+    <meta name="description" content="Light & Salt est une organisation humanitaire dédiée à l'amélioration des conditions de vie des enfants et familles vulnérables dans l'est de la République Démocratique du Congo. Éducation, santé, nutrition.">
+    <meta name="keywords" content="organisation humanitaire, aide enfants, RDC, République Démocratique Congo, éducation, santé, nutrition, Goma, Light Salt, ONG, bénévolat, donation">
+    <meta name="author" content="Light & Salt">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="fr">
+    <meta name="geo.region" content="CD">
+    <meta name="geo.placename" content="Goma, République Démocratique du Congo">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="--kBxNfoEJs2-gvavOB4r2zO9wxz_1cIUOj4RAkBak8" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Light & Salt - Organisation Humanitaire | Aide aux Enfants RDC">
+    <meta property="og:description" content="Light & Salt est une organisation humanitaire dédiée à l'amélioration des conditions de vie des enfants et familles vulnérables dans l'est de la RDC.">
+    <meta property="og:image" content="https://lightandsalthumanitarian.web.app/images/Logo1.jpg">
+    <meta property="og:url" content="https://lightandsalthumanitarian.web.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Light & Salt">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Light & Salt - Organisation Humanitaire | Aide aux Enfants RDC">
+    <meta name="twitter:description" content="Light & Salt est une organisation humanitaire dédiée à l'amélioration des conditions de vie des enfants et familles vulnérables dans l'est de la RDC.">
+    <meta name="twitter:image" content="https://lightandsalthumanitarian.web.app/images/Logo1.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Logo1.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Logo1.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Logo1.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://lightandsalthumanitarian.web.app">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Light & Salt",
+        "description": "Organisation humanitaire dédiée à l'amélioration des conditions de vie des enfants et familles vulnérables dans l'est de la République Démocratique du Congo",
+        "url": "https://lightandsalthumanitarian.web.app",
+        "logo": "https://lightandsalthumanitarian.web.app/images/Logo1.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Goma",
+            "addressCountry": "CD"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+243-991-475-836",
+            "contactType": "customer service",
+            "email": "contact@lightandsalt.com"
+        },
+        "sameAs": [
+            "https://www.instagram.com/lightandsalt",
+            "https://www.facebook.com/lightandsalt",
+            "https://www.twitter.com/lightandsalt",
+            "https://www.linkedin.com/company/lightandsalt"
+        ],
+        "foundingDate": "2017",
+        "areaServed": "République Démocratique du Congo",
+        "knowsAbout": ["Éducation", "Santé", "Nutrition", "Développement communautaire"]
+    }
+    </script>
+
+    <!-- ============== FONTAWESOME CDN ================= -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ============== GOOGLE FONTS ================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="nav__container container">
+            <div class="nav__left">
+                <div class="logo">
+                    <img src="images/Logo1.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav__right">
+                <ul>
+                    <li><a href="#" class="nav__active">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="donate.html">Donner</a></li>
+                </ul>
+            </div>
+            <button id="show__navbar-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="hide__navbar-btn" class="nav-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="hero-carousel">
+            <div class="carousel-slide active">
+                <div class="slide-bg" style="background-image: url('images/kids-img-2.png')"></div>
+                <div class="slide-content">
+                    <h2>Construisons leur avenir</h2>
+                    <p>Au-delà de la faim, au-delà de la maladie, au-delà des limites : Libérer le pouvoir de chaque enfant</p>
+                    <div class="header__actions">
+                        <a href="about.html">En savoir plus...</a>
+                        <a href="donate.html#donationCard">Donner maintenant</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-bg" style="background-image: url('../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.40.jpeg')"></div>
+                <div class="slide-content">
+                    <h2>Nos Réalisations</h2>
+                    <p>Découvrez l'impact positif de nos programmes sur les communautés de l'est de la RDC</p>
+                    <div class="header__actions">
+                        <a href="gallery.html">Voir la galerie</a>
+                        <a href="donate.html#donationCard">Soutenir nos actions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-bg" style="background-image: url('../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.41.jpeg')"></div>
+                <div class="slide-content">
+                    <h2>Éducation pour tous</h2>
+                    <p>Nous créons des environnements d'apprentissage sûrs et stimulants pour chaque enfant</p>
+                    <div class="header__actions">
+                        <a href="about.html">Nos programmes</a>
+                        <a href="contact.html">Nous rejoindre</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-slide">
+                <div class="slide-bg" style="background-image: url('../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.49.jpeg')"></div>
+                <div class="slide-content">
+                    <h2>Santé et Nutrition</h2>
+                    <p>Des soins médicaux essentiels et une nutrition adéquate pour le bien-être de chaque enfant</p>
+                    <div class="header__actions">
+                        <a href="about.html">En savoir plus</a>
+                        <a href="donate.html#donationCard">Contribuer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+        </div>
+    </header>
+
+    <main>
+        <div >
+            <div class="main-actions container">
+                <div class="make-action">
+                    <div class="action-icon">
+                        <i class="fa-solid fa-hand-holding-hand"></i>
+                    </div>
+                    <h3 class="action-title">
+                        Faire un don
+                    </h3>
+                    <p>Si vous êtes en mesure de contribuer d'une manière quelconque à une meilleure vie pour ces enfants, saisissez cette chance en cliquant sur le bouton ci-dessous et en suivant les étapes</p>
+                
+                    <a href="donate.html#donationCard" class="action-btn">Donner maintenant</a>
+                </div>
+                <div class="make-action">
+                    <div class="action-icon">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="action-title">
+                        Collecte de fonds
+                    </h3>
+                    <p>Nous prévoyons bientôt de lancer des événements de collecte de fonds tels que des jeux pour nous aider à atteindre nos objectifs, tout le montant collecté servira à nos activités sur le terrain</p>
+                
+                    <a href="donate.html#donationCard" class="action-btn">Contribuer</a>
+                </div>
+                <div class="make-action">
+                    <div class="action-icon">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="action-title">
+                        Bénévolat
+                    </h3>
+                    <p>Si vous souhaitez nous aider en faisant du bénévolat dans nos activités, n'hésitez pas à nous contacter en cliquant sur le bouton ci-dessous et nous vous recontacterons</p>
+                
+                    <a href="contact.html" class="action-btn">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="left">
+                <img src="images/kids-img-4.png" alt="">
+            </div>
+
+            <div class="right">
+                    <h2>Nous travaillons ensemble</h2>
+                    <div>
+                        <p class="title-secondary">Avec nos partenaires, nous visons à assurer un avenir radieux à ceux qui sont défavorisés</p>
+                    <p class="p-1">
+                        Dans la région orientale accidentée de la République Démocratique du Congo, au milieu des conflits prolongés, des guerres et des catastrophes où la vie peut être difficile, Light & Salt offre un havre d'espoir.
+                        Nous sommes une équipe d'individus dévoués travaillant aux côtés des communautés pour construire un avenir plus radieux pour les enfants et les familles.
+                    </p>
+
+                    <p class="p-1">
+                        <b>La faim ? Nous la combattons.</b>
+                        Nous fournissons des repas nutritifs dans les écoles et les communautés, assurant que les estomacs sont pleins et que les esprits peuvent se concentrer sur l'apprentissage.
+                    </p>
+                    <p class="p-1">
+                        <b>La maladie ? Nous la combattons.</b>
+                        Nous nous associons avec des professionnels de la santé pour fournir des soins médicaux essentiels, prévenir les maladies et construire des corps sains.
+                    </p>
+                    <p class="p-1">
+                        <b>L'éducation ? Nous y croyons.</b>
+                        Nous construisons des environnements d'apprentissage sûrs et stimulants, équipant les enfants des outils et des connaissances pour poursuivre leurs rêves.
+                    </p>
+                    <p class="p-1">
+                        <b>Mais nous ne pouvons pas le faire seuls.</b>
+                        Light & Salt prospère grâce au pouvoir du partenariat. Rejoignez-nous en tant que bénévole, donateur ou défenseur. Ensemble, nous pouvons briller plus fort et changer des vies dans l'est de la RDC.
+                    </p>
+                    <p class="p-1">
+                        <b>Ici, au milieu des défis, nous travaillons ensemble. Nous autonomisons. Nous nourrissons. Nous construisons. Nous sommes Light & Salt. Soyez la lumière. Soyez le sel.</b>
+                    </p>
+                    </div>    
+            </div>
+        </div>
+
+        <!-- Programs Section -->
+        <section class="programs-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Programmes</h2>
+                    <p class="section-subtitle">Des solutions holistiques pour transformer des vies</p>
+                </div>
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Éducation</h3>
+                        <p>Nous créons des environnements d'apprentissage sûrs et stimulants, équipant les enfants des outils et connaissances nécessaires pour poursuivre leurs rêves.</p>
+                        <ul class="program-features">
+                            <li>Écoles équipées</li>
+                            <li>Formation des enseignants</li>
+                            <li>Matériel scolaire</li>
+                            <li>Bourses d'études</li>
+                        </ul>
+                        <a href="about.html" class="program-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3>Santé</h3>
+                        <p>Nous nous associons avec des professionnels de la santé pour fournir des soins médicaux essentiels, prévenir les maladies et construire des corps sains.</p>
+                        <ul class="program-features">
+                            <li>Consultations médicales</li>
+                            <li>Vaccinations</li>
+                            <li>Médicaments essentiels</li>
+                            <li>Formation santé</li>
+                        </ul>
+                        <a href="about.html" class="program-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3>Nutrition</h3>
+                        <p>Nous fournissons des repas nutritifs dans les écoles et communautés, assurant que les estomacs sont pleins et que les esprits peuvent se concentrer sur l'apprentissage.</p>
+                        <ul class="program-features">
+                            <li>Repas scolaires</li>
+                            <li>Suppléments nutritionnels</li>
+                            <li>Formation nutrition</li>
+                            <li>Jardins communautaires</li>
+                        </ul>
+                        <a href="about.html" class="program-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Stories Section -->
+        <section class="stories-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Histoires de Transformation</h2>
+                    <p class="section-subtitle">Découvrez comment nous changeons des vies</p>
+                </div>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="images/kids-img-1.png" alt="Histoire de Marie">
+                        </div>
+                        <div class="story-content">
+                            <h3>Marie, 8 ans</h3>
+                            <p class="story-quote">"Grâce à Light & Salt, je peux maintenant aller à l'école et manger à ma faim. Je veux devenir médecin pour aider d'autres enfants comme moi."</p>
+                            <div class="story-tags">
+                                <span class="tag">Éducation</span>
+                                <span class="tag">Nutrition</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="images/kids-img-2.png" alt="Histoire de Jean">
+                        </div>
+                        <div class="story-content">
+                            <h3>Jean, 12 ans</h3>
+                            <p class="story-quote">"Les soins médicaux de Light & Salt ont sauvé ma vie. Maintenant je peux jouer avec mes amis sans avoir mal."</p>
+                            <div class="story-tags">
+                                <span class="tag">Santé</span>
+                                <span class="tag">Récupération</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="images/kids-img-3.png" alt="Histoire de la famille Mwamba">
+                        </div>
+                        <div class="story-content">
+                            <h3>Famille Mwamba</h3>
+                            <p class="story-quote">"Le jardin communautaire nous a donné l'espoir. Nous pouvons maintenant nourrir nos enfants et même vendre nos légumes."</p>
+                            <div class="story-tags">
+                                <span class="tag">Développement</span>
+                                <span class="tag">Autonomie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Partenaires</h2>
+                    <p class="section-subtitle">Ensemble pour un impact plus grand</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>Organisations Internationales</h3>
+                        <p>Nous collaborons avec des ONG internationales pour maximiser notre impact et partager nos meilleures pratiques.</p>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3>Gouvernement Local</h3>
+                        <p>Notre partenariat avec les autorités locales nous permet d'atteindre plus de communautés et d'assurer la durabilité de nos programmes.</p>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Communautés Locales</h3>
+                        <p>Les communautés sont au cœur de notre travail. Nous travaillons avec elles pour créer des solutions durables et adaptées.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="achievements">
+            <p>Chez Light & Salt, nous avons accompli</p>
+            <div class="achievements__container container">
+
+                <div class="achievement">
+                    <i class="fa-solid fa-coins"></i>
+                    <p class="number">687+</p>
+                    <p class="label">Dons</p>
+                </div>
+                <div class="achievement">
+                    <i class="fa-solid fa-person-breastfeeding"></i>
+                    <p class="number">1350+</p>
+                    <p class="label">Personnes aidées</p>
+                </div>
+                <div class="achievement">
+                    <i class="fa-solid fa-people-carry-box"></i>
+                    <p class="number">100+</p>
+                    <p class="label">Bénévoles</p>
+                </div>
+            </div>
+                
+        </div>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Restez informé</h2>
+                        <p>Recevez nos dernières actualités et découvrez comment votre soutien transforme des vies.</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <form>
+                            <input type="email" placeholder="Votre adresse e-mail" required>
+                            <button type="submit">S'abonner</button>
+                        </form>
+                        <p class="newsletter-note">Nous respectons votre vie privée. Désabonnement possible à tout moment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="quick-links">
+                <h2>Liens rapides</h2>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="donate.html#donationCard">Donner</a>
+            </div>
+            <div class="contact-links">
+                <h2>Rejoignez-nous sur</h2>
+                <p>+243 991 475 836</p>
+                <p>info@lightandsalt.com</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div>
+                    <a href="donate.html#donationCard" class="btn-primary">Donner maintenant</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; Light &amp; Salt 2024 </p>
+            <p class="design-credit">Designed by <a href="https://zachsoft.web.app/" target="_blank" rel="noopener noreferrer">ZachSoft</a></p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

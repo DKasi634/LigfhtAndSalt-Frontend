@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Faire un Don - Light & Salt | Soutenez Notre Mission Humanitaire</title>
+    <meta name="description" content="Faites un don à Light & Salt pour soutenir nos programmes d'éducation, santé et nutrition pour les enfants vulnérables en RDC. Mobile Money, virement bancaire.">
+    <meta name="keywords" content="don Light Salt, donation ONG, soutien humanitaire, aide enfants RDC, Mobile Money, virement bancaire">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="--kBxNfoEJs2-gvavOB4r2zO9wxz_1cIUOj4RAkBak8" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Faire un Don - Light & Salt | Soutenez Notre Mission Humanitaire">
+    <meta property="og:description" content="Faites un don à Light & Salt pour soutenir nos programmes d'éducation, santé et nutrition pour les enfants vulnérables en RDC.">
+    <meta property="og:image" content="https://lightandsalthumanitarian.web.app/images/Logo1.jpg">
+    <meta property="og:url" content="https://lightandsalthumanitarian.web.app/donate.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="canonical" href="https://lightandsalthumanitarian.web.app/donate.html">
+
+    <!-- ============== FONTAWESOME CDN ================= -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ============== GOOGLE FONTS ================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="donate.css">
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container container">
+            <div class="nav__left">
+                <div class="logo">
+                    <img src="images/Logo1.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav__right">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="#donationCard" class="nav__active">Donner</a></li>
+                </ul>
+             
+            </div>
+            <button id="show__navbar-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="hide__navbar-btn" class="nav-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="donate-hero">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Faites la différence</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Transformez</span> des vies<br>
+                        <span class="highlight">aujourd'hui</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Votre générosité crée des opportunités, restaure l'espoir et construit l'avenir 
+                        des enfants vulnérables en République Démocratique du Congo.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#donationCard" class="cta-primary">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Faire un don</span>
+                        </a>
+                        <a href="#impact" class="cta-secondary">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Voir l'impact</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fa-solid fa-child"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="500">0</div>
+                                <div class="stat-label">Enfants aidés</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="15">0</div>
+                                <div class="stat-label">Communautés</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fa-solid fa-calendar"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-target="7">0</div>
+                                <div class="stat-label">Années d'action</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="images/donate-bg-6.png" alt="Enfants heureux" class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-icon icon-1">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="floating-icon icon-2">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div class="floating-icon icon-3">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="impact-section" id="impact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Impact mesurable</span>
+                    </div>
+                    <h2>Votre générosité en action</h2>
+                    <p>Chaque don a un impact concret et mesurable sur la vie des enfants que nous aidons</p>
+                </div>
+                <div class="impact-grid">
+                    <div class="impact-card card-education">
+                        <div class="card-header">
+                            <div class="impact-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-number">01</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Éducation</h3>
+                            <p class="impact-description">Donnez accès à une éducation de qualité</p>
+                            <div class="impact-details">
+                                <div class="detail-item">
+                                    <span class="amount">50$</span>
+                                    <span class="description">= 1 mois d'école</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="amount">200$</span>
+                                    <span class="description">= Kit scolaire complet</span>
+                                </div>
+                            </div>
+                            <div class="impact-progress">
+                                <div class="progress-header">
+                                    <span>Objectif mensuel</span>
+                                    <span class="progress-percentage">75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-card card-health">
+                        <div class="card-header">
+                            <div class="impact-icon">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div class="card-number">02</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Santé</h3>
+                            <p class="impact-description">Assurez des soins médicaux essentiels</p>
+                            <div class="impact-details">
+                                <div class="detail-item">
+                                    <span class="amount">30$</span>
+                                    <span class="description">= Soins pour 5 enfants</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="amount">100$</span>
+                                    <span class="description">= Consultation médicale</span>
+                                </div>
+                            </div>
+                            <div class="impact-progress">
+                                <div class="progress-header">
+                                    <span>Objectif mensuel</span>
+                                    <span class="progress-percentage">60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-card card-nutrition">
+                        <div class="card-header">
+                            <div class="impact-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <div class="card-number">03</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Nutrition</h3>
+                            <p class="impact-description">Fournissez des repas nutritifs</p>
+                            <div class="impact-details">
+                                <div class="detail-item">
+                                    <span class="amount">20$</span>
+                                    <span class="description">= Repas pour 10 enfants</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="amount">80$</span>
+                                    <span class="description">= Programme nutritionnel</span>
+                                </div>
+                            </div>
+                            <div class="impact-progress">
+                                <div class="progress-header">
+                                    <span>Objectif mensuel</span>
+                                    <span class="progress-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Section -->
+        <section class="donation-section" id="donationCard">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Faites un don</span>
+                    </div>
+                    <h2>Votre générosité change des vies</h2>
+                    <p>Chaque contribution, aussi petite soit-elle, a un impact énorme sur la vie des enfants que nous aidons</p>
+                </div>
+                
+                <div class="donation-container">
+                    <div class="donation-form-container">
+                        <div class="form-card">
+                            <div class="form-header">
+                                <div class="form-icon">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                                <h3>Choisissez votre montant</h3>
+                                <p>Votre don fait la différence</p>
+                            </div>
+                            
+                            <form class="donation-form">
+                                <!-- Quick Amount Buttons -->
+                                <div class="quick-amounts">
+                                    <button type="button" class="amount-btn" data-amount="20">
+                                        <div class="amount-content">
+                                            <span class="amount">20$</span>
+                                            <span class="impact">10 repas</span>
+                                        </div>
+                                        <div class="amount-icon">
+                                            <i class="fa-solid fa-utensils"></i>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="amount-btn" data-amount="50">
+                                        <div class="amount-content">
+                                            <span class="amount">50$</span>
+                                            <span class="impact">1 mois école</span>
+                                        </div>
+                                        <div class="amount-icon">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="amount-btn" data-amount="100">
+                                        <div class="amount-content">
+                                            <span class="amount">100$</span>
+                                            <span class="impact">Soins médicaux</span>
+                                        </div>
+                                        <div class="amount-icon">
+                                            <i class="fa-solid fa-heart-pulse"></i>
+                                        </div>
+                                    </button>
+                                    <button type="button" class="amount-btn" data-amount="200">
+                                        <div class="amount-content">
+                                            <span class="amount">200$</span>
+                                            <span class="impact">Kit scolaire</span>
+                                        </div>
+                                        <div class="amount-icon">
+                                            <i class="fa-solid fa-backpack"></i>
+                                        </div>
+                                    </button>
+                                </div>
+
+                                <!-- Custom Amount -->
+                                <div class="custom-amount">
+                                    <label for="customAmount">Ou entrez un montant personnalisé</label>
+                                    <div class="amount-input-group">
+                                        <span class="currency">$</span>
+                                        <input type="number" id="customAmount" name="amount" placeholder="0" min="1">
+                                        <div class="input-decoration"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Methods -->
+                                <div class="payment-section">
+                                    <h4>Méthode de paiement</h4>
+                            <div class="payment-methods">
+                                        <div class="payment-method">
+                                            <input type="radio" id="mobile-money" name="payment" value="mobile-money" checked>
+                                            <label for="mobile-money">
+                                                <div class="method-icon">
+                                        <i class="fa-solid fa-mobile-alt"></i>
+                                                </div>
+                                                <div class="method-info">
+                                                    <span class="method-name">Mobile Money</span>
+                                                    <span class="method-details">+243 991 475 836</span>
+                                                </div>
+                                                <div class="method-check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="payment-method">
+                                            <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+                                            <label for="bank-transfer">
+                                                <div class="method-icon">
+                                                    <i class="fa-solid fa-university"></i>
+                                                </div>
+                                                <div class="method-info">
+                                                    <span class="method-name">Virement bancaire</span>
+                                                    <span class="method-details">Compte: 1234567890</span>
+                                                </div>
+                                                <div class="method-check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="payment-method">
+                                            <input type="radio" id="in-kind" name="payment" value="in-kind">
+                                            <label for="in-kind">
+                                                <div class="method-icon">
+                                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                                </div>
+                                                <div class="method-info">
+                                                    <span class="method-name">Don en nature</span>
+                                                    <span class="method-details">Contactez-nous</span>
+                                                </div>
+                                                <div class="method-check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Donor Info -->
+                                <div class="donor-info">
+                                    <h4>Vos informations (optionnel)</h4>
+                                    <div class="info-grid">
+                                        <div class="input-group">
+                                            <label for="donorName">Nom complet</label>
+                                            <input type="text" id="donorName" name="donorName" placeholder="Votre nom">
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="donorEmail">Email</label>
+                                            <input type="email" id="donorEmail" name="donorEmail" placeholder="votre@email.com">
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <label for="newsletter">
+                                            <span class="checkmark"></span>
+                                            Recevoir nos actualités par email
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="donate-btn">
+                                    <div class="btn-content">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>Faire un don maintenant</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <div class="btn-shine"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="donation-benefits">
+                        <div class="benefits-header">
+                            <h3>Pourquoi nous faire confiance ?</h3>
+                        </div>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-shield-check"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>100% sécurisé</h4>
+                                    <p>Vos données et paiements sont protégés par les meilleures technologies de sécurité</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-receipt"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Reçu fiscal</h4>
+                                    <p>Recevez automatiquement votre reçu fiscal pour vos déductions d'impôts</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Impact mesurable</h4>
+                                    <p>Suivez l'impact de votre don avec nos rapports détaillés et photos</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Transparence totale</h4>
+                                    <p>100% de votre don va directement aux programmes, aucun frais administratif</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ce que disent nos donateurs</h2>
+                    <p>Des témoignages authentiques de ceux qui nous font confiance</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>"Depuis que je fais des dons réguliers à Light & Salt, je vois concrètement l'impact de mes contributions. Les photos et rapports me montrent que mon argent est bien utilisé."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Marie Dubois</h4>
+                                <span>Donatrice depuis 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>"L'équipe de Light & Salt est transparente et professionnelle. Je recommande vivement cette organisation à tous ceux qui veulent faire une différence."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Jean-Pierre Martin</h4>
+                                <span>Donateur mensuel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p>"Chaque don compte. Même les petits montants permettent d'acheter des fournitures scolaires ou des repas pour les enfants. C'est gratifiant de voir l'impact direct."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sophie Laurent</h4>
+                                <span>Bénévole et donatrice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="quick-links">
+                <h2>Liens rapides</h2>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="#donationCard">Donner</a>
+            </div>
+            <div class="contact-links">
+                <h2>Rejoignez-nous sur</h2>
+                <p>+243 991 475 836</p>
+                <p>info@lightandsalt.com</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div>
+                    <a href="#donationCard" class="btn-primary">Donner maintenant</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; Light &amp; Salt 2024 </p>
+            <p class="design-credit">Designed by <a href="https://zachsoft.web.app/" target="_blank" rel="noopener noreferrer">ZachSoft</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="donate.js"></script>
+    </body>
+    </html>

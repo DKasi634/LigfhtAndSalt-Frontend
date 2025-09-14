@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Galerie - Light & Salt | Photos de Nos Activités Humanitaires</title>
+    <meta name="description" content="Découvrez nos activités humanitaires en images. Photos de nos programmes d'éducation, santé et nutrition pour les enfants vulnérables en RDC.">
+    <meta name="keywords" content="galerie Light Salt, photos activités humanitaires, images ONG RDC, programmes éducation santé">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="--kBxNfoEJs2-gvavOB4r2zO9wxz_1cIUOj4RAkBak8" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Galerie - Light & Salt | Photos de Nos Activités Humanitaires">
+    <meta property="og:description" content="Découvrez nos activités humanitaires en images. Photos de nos programmes d'éducation, santé et nutrition pour les enfants vulnérables en RDC.">
+    <meta property="og:image" content="https://lightandsalthumanitarian.web.app/images/Logo1.jpg">
+    <meta property="og:url" content="https://lightandsalthumanitarian.web.app/gallery.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="canonical" href="https://lightandsalthumanitarian.web.app/gallery.html">
+
+    <!-- ============== FONTAWESOME CDN ================= -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ============== GOOGLE FONTS ================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="nav__container container">
+            <div class="nav__left">
+                <div class="logo">
+                    <img src="images/Logo1.jpg" alt="">
+                </div>
+            </div>
+            <div class="nav__right">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="nav__active">Galerie</a></li>
+                    <li><a href="donate.html">Donner</a></li>
+                </ul>
+            </div>
+            <button id="show__navbar-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="hide__navbar-btn" class="nav-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="gallery-hero">
+            <div class="container">
+                <h1>Notre Galerie</h1>
+                <p>Découvrez nos moments de joie et nos réalisations</p>
+            </div>
+        </section>
+
+        <!-- Gallery Stats Section -->
+        <section class="gallery-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-images"></i>
+                        </div>
+                        <h3>50+</h3>
+                        <p>Photos dans la galerie</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h3>25+</h3>
+                        <p>Événements organisés</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>500+</h3>
+                        <p>Participants aux activités</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3>100%</h3>
+                        <p>Engagement communautaire</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="activities">Activités</button>
+                    <button class="filter-btn" data-filter="children">Enfants</button>
+                    <button class="filter-btn" data-filter="team">Équipe</button>
+                    <button class="filter-btn" data-filter="events">Événements</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Team Photos -->
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.52.37.jpeg" alt="Jailton LUANDA - Coordinateur National">
+                        <div class="gallery-overlay">
+                            <h3>Jailton LUANDA</h3>
+                            <p>Coordinateur National</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.53.05.jpeg" alt="Membre de l'équipe">
+                        <div class="gallery-overlay">
+                            <h3>Notre Équipe</h3>
+                            <p>Des professionnels dévoués</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.53.45.jpeg" alt="Membre de l'équipe">
+                        <div class="gallery-overlay">
+                            <h3>Notre Équipe</h3>
+                            <p>Des professionnels dévoués</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.55.48.jpeg" alt="Membre de l'équipe">
+                        <div class="gallery-overlay">
+                            <h3>Notre Équipe</h3>
+                            <p>Des professionnels dévoués</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 15.00.11.jpeg" alt="Membre de l'équipe">
+                        <div class="gallery-overlay">
+                            <h3>Notre Équipe</h3>
+                            <p>Des professionnels dévoués</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 15.03.43.jpeg" alt="Membre de l'équipe">
+                        <div class="gallery-overlay">
+                            <h3>Notre Équipe</h3>
+                            <p>Des professionnels dévoués</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 15.05.10.jpeg" alt="Membre de l'équipe">
+                        <div class="gallery-overlay">
+                            <h3>Notre Équipe</h3>
+                            <p>Des professionnels dévoués</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14 2.55.48.jpg" alt="Membre de l'équipe">
+                        <div class="gallery-overlay">
+                            <h3>Notre Équipe</h3>
+                            <p>Des professionnels dévoués</p>
+                        </div>
+                    </div>
+
+                    <!-- Children Photos -->
+                    <div class="gallery-item" data-category="children">
+                        <img src="images/kids-img-1.png" alt="Enfants heureux">
+                        <div class="gallery-overlay">
+                            <h3>Enfants Heureux</h3>
+                            <p>Le sourire de nos enfants</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="children">
+                        <img src="images/kids-img-2.png" alt="Enfants à l'école">
+                        <div class="gallery-overlay">
+                            <h3>Éducation</h3>
+                            <p>Apprendre avec joie</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="children">
+                        <img src="images/kids-img-3.png" alt="Enfants jouant">
+                        <div class="gallery-overlay">
+                            <h3>Jeux et Loisirs</h3>
+                            <p>Moment de détente</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="children">
+                        <img src="images/kids-img-4.png" alt="Enfants ensemble">
+                        <div class="gallery-overlay">
+                            <h3>Solidarité</h3>
+                            <p>Ensemble nous sommes plus forts</p>
+                        </div>
+                    </div>
+
+                    <!-- Activities Photos -->
+                    <div class="gallery-item" data-category="activities">
+                        <img src="images/school-kids-1.png" alt="Activités scolaires">
+                        <div class="gallery-overlay">
+                            <h3>Activités Scolaires</h3>
+                            <p>Apprendre en s'amusant</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="images/school-kids-2.png" alt="École">
+                        <div class="gallery-overlay">
+                            <h3>Notre École</h3>
+                            <p>Un environnement sûr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="images/school-kids-3.png" alt="Cours">
+                        <div class="gallery-overlay">
+                            <h3>Cours en Action</h3>
+                            <p>Éducation de qualité</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="images/eating-kids-1.png" alt="Repas">
+                        <div class="gallery-overlay">
+                            <h3>Repas Nutritifs</h3>
+                            <p>Nourrir les corps et les esprits</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="images/eating-kids-2.png" alt="Nourriture">
+                        <div class="gallery-overlay">
+                            <h3>Nutrition</h3>
+                            <p>Des repas équilibrés</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="images/doctor-kids-1.png" alt="Soins médicaux">
+                        <div class="gallery-overlay">
+                            <h3>Soins Médicaux</h3>
+                            <p>Santé et bien-être</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="images/doctor-kids-2.png" alt="Médecins">
+                        <div class="gallery-overlay">
+                            <h3>Équipe Médicale</h3>
+                            <p>Professionnels de la santé</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Réalisations -->
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.40.jpeg" alt="Nos réalisations">
+                        <div class="gallery-overlay">
+                            <h3>Nos Réalisations</h3>
+                            <p>Impact positif sur le terrain</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.41.jpeg" alt="Programmes éducatifs">
+                        <div class="gallery-overlay">
+                            <h3>Programmes Éducatifs</h3>
+                            <p>Éducation pour tous</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.49.jpeg" alt="Activités communautaires">
+                        <div class="gallery-overlay">
+                            <h3>Activités Communautaires</h3>
+                            <p>Engagement local</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.55.jpeg" alt="Soins de santé">
+                        <div class="gallery-overlay">
+                            <h3>Soins de Santé</h3>
+                            <p>Santé pour tous</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.56.jpeg" alt="Nutrition">
+                        <div class="gallery-overlay">
+                            <h3>Programme Nutrition</h3>
+                            <p>Nourrir les enfants</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.57.jpeg" alt="Formation">
+                        <div class="gallery-overlay">
+                            <h3>Formation</h3>
+                            <p>Développement des compétences</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.58.jpeg" alt="Soutien communautaire">
+                        <div class="gallery-overlay">
+                            <h3>Soutien Communautaire</h3>
+                            <p>Accompagnement des familles</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.59.jpeg" alt="Projets locaux">
+                        <div class="gallery-overlay">
+                            <h3>Projets Locaux</h3>
+                            <p>Développement durable</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.00.jpeg" alt="Équipements">
+                        <div class="gallery-overlay">
+                            <h3>Équipements</h3>
+                            <p>Matériel et ressources</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.02.jpeg" alt="Infrastructures">
+                        <div class="gallery-overlay">
+                            <h3>Infrastructures</h3>
+                            <p>Bâtiments et installations</p>
+                        </div>
+                    </div>
+                    
+                    <!-- More Activities -->
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.03.jpeg" alt="Formation professionnelle">
+                        <div class="gallery-overlay">
+                            <h3>Formation Professionnelle</h3>
+                            <p>Développement des compétences</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.04.jpeg" alt="Activités sportives">
+                        <div class="gallery-overlay">
+                            <h3>Activités Sportives</h3>
+                            <p>Sport et loisirs pour les enfants</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.05.jpeg" alt="Cérémonies">
+                        <div class="gallery-overlay">
+                            <h3>Cérémonies</h3>
+                            <p>Événements spéciaux</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.06.jpeg" alt="Distribution de matériel">
+                        <div class="gallery-overlay">
+                            <h3>Distribution de Matériel</h3>
+                            <p>Fournitures scolaires et médicales</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.07.jpeg" alt="Travaux communautaires">
+                        <div class="gallery-overlay">
+                            <h3>Travaux Communautaires</h3>
+                            <p>Construction et rénovation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.08.jpeg" alt="Sensibilisation">
+                        <div class="gallery-overlay">
+                            <h3>Sensibilisation</h3>
+                            <p>Éducation communautaire</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.09.jpeg" alt="Réunions">
+                        <div class="gallery-overlay">
+                            <h3>Réunions Communautaires</h3>
+                            <p>Planification et coordination</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="activities">
+                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.11.jpeg" alt="Événements spéciaux">
+                        <div class="gallery-overlay">
+                            <h3>Événements Spéciaux</h3>
+                            <p>Fêtes et célébrations</p>
+                        </div>
+                    </div>
+
+                    <!-- Events Section -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/school-kids-1.png" alt="Journée de l'éducation">
+                        <div class="gallery-overlay">
+                            <h3>Journée de l'Éducation</h3>
+                            <p>Célébration de l'apprentissage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/school-kids-2.png" alt="Cérémonie de remise">
+                        <div class="gallery-overlay">
+                            <h3>Cérémonie de Remise</h3>
+                            <p>Distribution de prix et diplômes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/school-kids-3.png" alt="Festival des enfants">
+                        <div class="gallery-overlay">
+                            <h3>Festival des Enfants</h3>
+                            <p>Journée de joie et de divertissement</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/eating-kids-1.png" alt="Journée nutrition">
+                        <div class="gallery-overlay">
+                            <h3>Journée Nutrition</h3>
+                            <p>Sensibilisation à l'alimentation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/eating-kids-2.png" alt="Cuisine communautaire">
+                        <div class="gallery-overlay">
+                            <h3>Cuisine Communautaire</h3>
+                            <p>Préparation de repas ensemble</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/doctor-kids-1.png" alt="Journée santé">
+                        <div class="gallery-overlay">
+                            <h3>Journée Santé</h3>
+                            <p>Consultations gratuites</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/doctor-kids-2.png" alt="Campagne vaccination">
+                        <div class="gallery-overlay">
+                            <h3>Campagne de Vaccination</h3>
+                            <p>Protection contre les maladies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/kids-img-1.png" alt="Fête de fin d'année">
+                        <div class="gallery-overlay">
+                            <h3>Fête de Fin d'Année</h3>
+                            <p>Célébration des réussites</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/kids-img-2.png" alt="Journée sportive">
+                        <div class="gallery-overlay">
+                            <h3>Journée Sportive</h3>
+                            <p>Compétitions et jeux</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/kids-img-3.png" alt="Spectacle des enfants">
+                        <div class="gallery-overlay">
+                            <h3>Spectacle des Enfants</h3>
+                            <p>Talents et créativité</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/kids-img-4.png" alt="Assemblée générale">
+                        <div class="gallery-overlay">
+                            <h3>Assemblée Générale</h3>
+                            <p>Réunion de la communauté</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="quick-links">
+                <h2>Liens rapides</h2>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="donate.html#donationCard">Donner</a>
+            </div>
+            <div class="contact-links">
+                <h2>Rejoignez-nous sur</h2>
+                <p>+243 991 475 836</p>
+                <p>info@lightandsalt.com</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div>
+                    <a href="donate.html#donationCard" class="btn-primary">Donner maintenant</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; Light &amp; Salt 2024 </p>
+            <p class="design-credit">Designed by <a href="https://zachsoft.web.app/" target="_blank" rel="noopener noreferrer">ZachSoft</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
