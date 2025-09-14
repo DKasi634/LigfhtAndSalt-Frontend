@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Contact - Light & Salt | Contactez Notre Équipe Humanitaire</title>
-    <meta name="description" content="Contactez Light & Salt pour faire un don, devenir bénévole ou obtenir des informations sur nos programmes humanitaires en RDC. Téléphone: +243 991 475 836">
-    <meta name="keywords" content="contact Light Salt, téléphone ONG, email humanitaire, adresse Goma, bénévolat RDC">
+    <title>Contact - Light & Salt | Rejoignez Notre Mission Humanitaire</title>
+    <meta name="description" content="Contactez Light & Salt pour faire du bénévolat, poser des questions ou nous soutenir dans notre mission humanitaire en RDC.">
+    <meta name="keywords" content="contact Light Salt, bénévolat RDC, organisation humanitaire, aide enfants, Goma">
     <meta name="robots" content="index, follow">
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="--kBxNfoEJs2-gvavOB4r2zO9wxz_1cIUOj4RAkBak8" />
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Contact - Light & Salt | Contactez Notre Équipe Humanitaire">
-    <meta property="og:description" content="Contactez Light & Salt pour faire un don, devenir bénévole ou obtenir des informations sur nos programmes humanitaires en RDC.">
+    <meta property="og:title" content="Contact - Light & Salt | Rejoignez Notre Mission Humanitaire">
+    <meta property="og:description" content="Contactez Light & Salt pour faire du bénévolat, poser des questions ou nous soutenir dans notre mission humanitaire en RDC.">
     <meta property="og:image" content="https://lightandsalthumanitarian.web.app/images/Logo1.jpg">
     <meta property="og:url" content="https://lightandsalthumanitarian.web.app/contact.html">
     <meta property="og:type" content="website">
@@ -35,7 +35,6 @@
 
 </head>
 <body>
-    
     <nav class="nav">
         <div class="nav__container container">
             <div class="nav__left">
@@ -47,240 +46,328 @@
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">À propos</a></li>
-                    <li><a href="#" class="nav__active">Contact</a></li>
+                    <li><a href="#contactForm" class="nav__active">Contact</a></li>
                     <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="donate.html">Donner</a></li>
-                </ul> 
+                    <li><a href="donate.html#donationCard">Donner</a></li>
+                </ul>
             </div>
             <button id="show__navbar-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
             <button id="hide__navbar-btn" class="nav-btn"><i class="fa-solid fa-xmark"></i></button>
         </div>
     </nav>
-    
-    <!-- Hero Section -->
-    <section class="contact-hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Contactez-nous</h1>
-                <p class="hero-subtitle">Nous aimerions avoir de vos nouvelles !</p>
-                <p class="hero-description">Que vous ayez une question, un commentaire ou une suggestion, n'hésitez pas à nous contacter à tout moment et nous vous répondrons dès que possible.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Info Section -->
-    <section class="contact-info">
-        <div class="container">
-            <div class="info-grid">
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3>Téléphone</h3>
-                    <p>+243 991 475 836</p>
-                    <span>Disponible 24/7</span>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>contact@lightandsalt.com</p>
-                    <span>Réponse sous 24h</span>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h3>Adresse</h3>
-                    <p>Goma, République Démocratique du Congo</p>
-                    <span>Est de la RDC</span>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                    <h3>Heures d'ouverture</h3>
-                    <p>Lun - Ven: 8h00 - 17h00</p>
-                    <span>SAM: 9h00 - 13h00</span>
-                </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+                <div class="hero-overlay"></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact">
-        <div class="container contact__container">
-            <aside class="contact_aside">
-                <h2>Envoyez-nous un message</h2>
-                <p>Remplissez le formulaire ci-contre et nous vous recontacterons rapidement. Votre message est important pour nous.</p>
-                
-                <div class="contact-methods">
-                    <h3>Autres moyens de nous joindre</h3>
-                    <div class="method-item">
-                        <i class="fa-solid fa-comments"></i>
-                        <div>
-                            <h4>Chat en direct</h4>
-                            <p>Disponible sur notre site web</p>
-                        </div>
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contactez-nous</span>
                     </div>
-                    <div class="method-item">
-                        <i class="fa-solid fa-video"></i>
-                        <div>
-                            <h4>Visioconférence</h4>
-                            <p>Sur rendez-vous uniquement</p>
-                        </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Rejoignez</span> notre mission<br>
+                        <span class="highlight">ensemble</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Que vous souhaitiez faire du bénévolat, poser des questions ou nous soutenir, 
+                        nous sommes là pour vous accompagner dans votre engagement humanitaire.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contactForm" class="cta-primary">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Envoyer un message</span>
+                        </a>
+                        <a href="donate.html#donationCard" class="cta-secondary">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Faire un don</span>
+                        </a>
                     </div>
-                    <div class="method-item">
-                        <i class="fa-solid fa-calendar"></i>
-                        <div>
-                            <h4>Rendez-vous</h4>
-                            <p>Visite de nos locaux</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="images/kids-img-1.png" alt="Contactez-nous" class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-icon icon-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="floating-icon icon-2">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="floating-icon icon-3">
+                                <i class="fa-solid fa-map-marker-alt"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="social-section">
-                    <h3>Suivez-nous</h3>
-                    <ul class="contact__socials">
-                        <li><a href="https://www.instagram.com" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                                <span>Instagram</span>
-                        </a></li>
-                        <li><a href="https://www.twitter.com" target="_blank">
-                                <i class="fa-brands fa-x-twitter"></i>
-                                <span>Twitter</span>
-                        </a></li>
-                        <li><a href="https://www.linkedin.com" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                        </a></li>
-                        <li><a href="https://www.facebook.com" target="_blank">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <span>Facebook</span>
-                        </a></li>
-                    </ul>
-                </div>
-            </aside>
-            <form action="" class="contact__form">
-                <div class="form-header">
-                    <h3>Formulaire de contact</h3>
-                    <p>Remplissez tous les champs ci-dessous</p>
-                </div>
-                
-                <div class="form__name">
-                    <div class="input-group">
-                        <label for="firstName">Prénom *</label>
-                        <input type="text" id="firstName" name="First Name" placeholder="Votre prénom" required>
+        <!-- Contact Info Section -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-info-circle"></i>
+                        <span>Informations de contact</span>
                     </div>
-                    <div class="input-group">
-                        <label for="lastName">Nom de famille *</label>
-                        <input type="text" id="lastName" name="Last Name" placeholder="Votre nom de famille" required>
+                    <h2>Plusieurs façons de nous joindre</h2>
+                    <p>Choisissez le moyen de communication qui vous convient le mieux</p>
+                </div>
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3>Téléphone</h3>
+                        <p class="contact-details">+243 991 475 836</p>
+                        <p class="contact-description">Appelez-nous pour toute question urgente ou pour discuter de votre participation</p>
+                        <a href="tel:+243991475836" class="contact-btn">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Appeler maintenant</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p class="contact-details">contact@lightandsalthumanitarian.org</p>
+                        <p class="contact-description">Envoyez-nous un email pour toute question ou demande d'information</p>
+                        <a href="mailto:contact@lightandsalthumanitarian.org" class="contact-btn">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Envoyer un email</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Adresse</h3>
+                        <p class="contact-details">Goma, République Démocratique du Congo</p>
+                        <p class="contact-description">Notre bureau principal se trouve à Goma, dans l'est de la RDC</p>
+                        <a href="#" class="contact-btn">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <span>Voir sur la carte</span>
+                        </a>
                     </div>
                 </div>
-                
-                <div class="input-group">
-                    <label for="email">Adresse e-mail *</label>
-                    <input type="email" id="email" name="Email Address" placeholder="votre.email@exemple.com" required>
-                </div>
-                
-                <div class="input-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone" name="Phone" placeholder="+243 XXX XXX XXX">
-                </div>
-                
-                <div class="input-group">
-                    <label for="subject">Sujet *</label>
-                    <select id="subject" name="Subject" required>
-                        <option value="">Sélectionnez un sujet</option>
-                        <option value="general">Question générale</option>
-                        <option value="donation">Donation</option>
-                        <option value="volunteer">Bénévolat</option>
-                        <option value="partnership">Partenariat</option>
-                        <option value="media">Médias</option>
-                        <option value="other">Autre</option>
-                    </select>
-                </div>
-                
-                <div class="input-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="Message" placeholder="Décrivez votre demande en détail..." rows="6" required></textarea>
-                </div>
-                
-                <div class="form-checkbox">
-                    <input type="checkbox" id="newsletter" name="Newsletter">
-                    <label for="newsletter">Je souhaite recevoir les actualités de Light & Salt</label>
-                </div>
-                
-                <div class="form-action-btn">
-                    <button type="submit" class="btn-primary">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        Envoyer le message
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2>Questions fréquemment posées</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>Comment puis-je faire un don ?</h3>
-                    <p>Vous pouvez faire un don via notre page de donation en utilisant Mobile Money, virement bancaire ou don en nature. Tous les détails sont disponibles sur notre page "Donner".</p>
+        <!-- Contact Form Section -->
+        <section class="contact-form-section" id="contactForm">
+            <div class="container">
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <div class="form-icon">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <h3>Envoyez-nous un message</h3>
+                            <p>Nous vous répondrons dans les plus brefs délais</p>
+                        </div>
+                        
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="firstName">Prénom *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="lastName">Nom *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+243 XXX XXX XXX">
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="subject">Sujet *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="volunteer">Bénévolat</option>
+                                    <option value="donation">Don</option>
+                                    <option value="partnership">Partenariat</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Décrivez votre demande ou votre message..." rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">
+                                    <span class="checkmark"></span>
+                                    Je souhaite recevoir les actualités de Light & Salt par email
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <div class="btn-content">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Envoyer le message</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <div class="btn-shine"></div>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-benefits">
+                        <div class="benefits-header">
+                            <h3>Pourquoi nous contacter ?</h3>
+                        </div>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-hands-helping"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Bénévolat</h4>
+                                    <p>Rejoignez notre équipe de bénévoles et participez directement à nos actions sur le terrain</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Partenariat</h4>
+                                    <p>Développez un partenariat avec nous pour maximiser l'impact de vos actions solidaires</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-question-circle"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Questions</h4>
+                                    <p>Obtenez des réponses à toutes vos questions sur nos programmes et notre organisation</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Soutien</h4>
+                                    <p>Découvrez comment vous pouvez nous soutenir dans notre mission humanitaire</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-item">
-                    <h3>Comment devenir bénévole ?</h3>
-                    <p>Nous accueillons toujours de nouveaux bénévoles ! Contactez-nous via ce formulaire en sélectionnant "Bénévolat" comme sujet, et nous vous recontacterons rapidement.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-question-circle"></i>
+                        <span>Questions fréquentes</span>
+                    </div>
+                    <h2>Réponses à vos questions</h2>
+                    <p>Découvrez les réponses aux questions les plus fréquemment posées</p>
                 </div>
-                <div class="faq-item">
-                    <h3>Où travaillez-vous exactement ?</h3>
-                    <p>Nous opérons principalement dans l'est de la République Démocratique du Congo, avec notre bureau principal à Goma. Nous servons plus de 15 communautés dans la région.</p>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Comment puis-je faire du bénévolat ?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pour faire du bénévolat, contactez-nous via le formulaire ci-dessus ou par téléphone. Nous vous expliquerons nos besoins actuels et vous guiderons dans le processus d'intégration.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quels sont les domaines d'intervention ?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nous intervenons dans trois domaines principaux : l'éducation (écoles, formation), la santé (soins médicaux, prévention) et la nutrition (repas scolaires, jardins communautaires).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Comment mes dons sont-ils utilisés ?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>100% de vos dons vont directement aux programmes sur le terrain. Nous publions des rapports réguliers sur l'utilisation des fonds et l'impact de nos actions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Puis-je visiter vos projets sur le terrain ?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Oui, nous organisons régulièrement des visites pour nos donateurs et partenaires. Contactez-nous pour organiser votre visite et découvrir nos projets en action.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="faq-item">
-                    <h3>Comment puis-je suivre vos activités ?</h3>
-                    <p>Suivez-nous sur nos réseaux sociaux (Instagram, Facebook, Twitter, LinkedIn) et consultez régulièrement notre galerie pour voir nos dernières activités sur le terrain.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="quick-links">
+                <h2>Liens rapides</h2>
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="#contactForm">Contact</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="donate.html#donationCard">Donner</a>
+            </div>
+            <div class="contact-links">
+                <h2>Rejoignez-nous sur</h2>
+                <p>+243 991 475 836</p>
+                <p>contact@lightandsalthumanitarian.org</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div>
+                    <a href="donate.html#donationCard" class="btn-primary">Donner maintenant</a>
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-<footer class="footer">
-    <div class="footer__container container">
-        <div class="quick-links">
-            <h2>Liens rapides</h2>
-            <a href="index.html">Accueil</a>
-            <a href="about.html">À propos</a>
-            <a href="#">Contact</a>
-            <a href="gallery.html">Galerie</a>
-            <a href="donate.html#donationCard">Donner</a>
-        </div>
-        <div class="contact-links">
-            <h2>Rejoignez-nous sur</h2>
-            <p>+243 991 475 836</p>
-            <p>info@lightandsalt.com</p>
-            <div class="socials">
-                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
-            <div>
-                <a href="donate.html#donationCard" class="btn-primary">Donner maintenant</a>
-            </div>
-        </div>
-        
-        
-    </div>
         <div class="footer__copyright">
             <p>&copy; Light &amp; Salt 2024 </p>
             <p class="design-credit">Designed by <a href="https://zachsoft.web.app/" target="_blank" rel="noopener noreferrer">ZachSoft</a></p>
         </div>
-</footer>
-<script src="script.js"></script>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

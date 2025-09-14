@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Galerie - Light & Salt | Photos de Nos Activités Humanitaires</title>
-    <meta name="description" content="Découvrez nos activités humanitaires en images. Photos de nos programmes d'éducation, santé et nutrition pour les enfants vulnérables en RDC.">
-    <meta name="keywords" content="galerie Light Salt, photos activités humanitaires, images ONG RDC, programmes éducation santé">
+    <title>Galerie - Light & Salt | Nos Réalisations et Actions</title>
+    <meta name="description" content="Découvrez nos réalisations et actions sur le terrain en République Démocratique du Congo. Photos et vidéos de nos programmes d'éducation, santé et nutrition.">
+    <meta name="keywords" content="galerie Light Salt, réalisations RDC, photos humanitaires, programmes éducation santé nutrition">
     <meta name="robots" content="index, follow">
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="--kBxNfoEJs2-gvavOB4r2zO9wxz_1cIUOj4RAkBak8" />
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Galerie - Light & Salt | Photos de Nos Activités Humanitaires">
-    <meta property="og:description" content="Découvrez nos activités humanitaires en images. Photos de nos programmes d'éducation, santé et nutrition pour les enfants vulnérables en RDC.">
+    <meta property="og:title" content="Galerie - Light & Salt | Nos Réalisations et Actions">
+    <meta property="og:description" content="Découvrez nos réalisations et actions sur le terrain en République Démocratique du Congo.">
     <meta property="og:image" content="https://lightandsalthumanitarian.web.app/images/Logo1.jpg">
     <meta property="og:url" content="https://lightandsalthumanitarian.web.app/gallery.html">
     <meta property="og:type" content="website">
@@ -35,7 +35,6 @@
 
 </head>
 <body>
-    
     <nav class="nav">
         <div class="nav__container container">
             <div class="nav__left">
@@ -46,10 +45,10 @@
             <div class="nav__right">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="../about.html">À propos</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="#" class="nav__active">Galerie</a></li>
-                    <li><a href="donate.html">Donner</a></li>
+                    <li><a href="donate.html#donationCard">Donner</a></li>
                 </ul>
             </div>
             <button id="show__navbar-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
@@ -58,447 +57,706 @@
     </nav>
 
     <main>
+        <!-- Hero Section -->
         <section class="gallery-hero">
-            <div class="container">
-                <h1>Notre Galerie</h1>
-                <p>Découvrez nos moments de joie et nos réalisations</p>
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+                <div class="hero-overlay"></div>
             </div>
-        </section>
-
-        <!-- Gallery Stats Section -->
-        <section class="gallery-stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-icon">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-images"></i>
+                        <span>Nos réalisations</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Découvrez</span> notre impact<br>
+                        <span class="highlight">en images</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Plongez dans nos actions sur le terrain et découvrez comment nous transformons 
+                        des vies chaque jour en République Démocratique du Congo.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#gallery" class="cta-primary">
                             <i class="fa-solid fa-images"></i>
-                        </div>
-                        <h3>50+</h3>
-                        <p>Photos dans la galerie</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fa-solid fa-calendar-days"></i>
-                        </div>
-                        <h3>25+</h3>
-                        <p>Événements organisés</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <h3>500+</h3>
-                        <p>Participants aux activités</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">
+                            <span>Voir la galerie</span>
+                        </a>
+                        <a href="donate.html#donationCard" class="cta-secondary">
                             <i class="fa-solid fa-heart"></i>
+                            <span>Nous soutenir</span>
+                        </a>
+                    </div>
                         </div>
-                        <h3>100%</h3>
-                        <p>Engagement communautaire</p>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.40.jpeg" alt="Nos réalisations" class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-icon icon-1">
+                                <i class="fa-solid fa-camera"></i>
+                    </div>
+                            <div class="floating-icon icon-2">
+                                <i class="fa-solid fa-video"></i>
+                        </div>
+                            <div class="floating-icon icon-3">
+                                <i class="fa-solid fa-heart"></i>
+                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="gallery-section">
+        <!-- Gallery Filter Section -->
+        <section class="gallery-filter-section">
             <div class="container">
-                <div class="gallery-filters">
-                    <button class="filter-btn active" data-filter="all">Tous</button>
-                    <button class="filter-btn" data-filter="activities">Activités</button>
-                    <button class="filter-btn" data-filter="children">Enfants</button>
-                    <button class="filter-btn" data-filter="team">Équipe</button>
-                    <button class="filter-btn" data-filter="events">Événements</button>
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-filter"></i>
+                        <span>Filtrer par catégorie</span>
+                    </div>
+                    <h2>Nos programmes en action</h2>
+                    <p>Explorez nos différentes activités et programmes</p>
                 </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fa-solid fa-th"></i>
+                        <span>Tout</span>
+                    </button>
+                    <button class="filter-btn" data-filter="education">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Éducation</span>
+                    </button>
+                    <button class="filter-btn" data-filter="health">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <span>Santé</span>
+                    </button>
+                    <button class="filter-btn" data-filter="nutrition">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Nutrition</span>
+                    </button>
+                    <button class="filter-btn" data-filter="community">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Communauté</span>
+                    </button>
+                </div>
+            </div>
+        </section>
 
+        <!-- Gallery Grid Section -->
+        <section class="gallery-grid-section" id="gallery">
+            <div class="container">
                 <div class="gallery-grid">
-                    <!-- Team Photos -->
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.52.37.jpeg" alt="Jailton LUANDA - Coordinateur National">
+                    <!-- Education Images -->
+                    <div class="gallery-item" data-category="education">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.40.jpeg" alt="École en construction" loading="eager">
                         <div class="gallery-overlay">
-                            <h3>Jailton LUANDA</h3>
-                            <p>Coordinateur National</p>
+                                <div class="gallery-info">
+                                    <h3>École en construction</h3>
+                                    <p>Construction d'une nouvelle école pour les enfants de la communauté</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Éducation</span>
+                                        <span class="tag">Construction</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.53.05.jpeg" alt="Membre de l'équipe">
+                    <div class="gallery-item" data-category="education">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.41.jpeg" alt="Enfants en classe" loading="eager">
                         <div class="gallery-overlay">
-                            <h3>Notre Équipe</h3>
-                            <p>Des professionnels dévoués</p>
+                                <div class="gallery-info">
+                                    <h3>Enfants en classe</h3>
+                                    <p>Les enfants bénéficient d'un environnement d'apprentissage sûr</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Éducation</span>
+                                        <span class="tag">Enfants</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.53.45.jpeg" alt="Membre de l'équipe">
+                    <!-- Health Images -->
+                    <div class="gallery-item" data-category="health">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.49.jpeg" alt="Consultation médicale" loading="eager">
                         <div class="gallery-overlay">
-                            <h3>Notre Équipe</h3>
-                            <p>Des professionnels dévoués</p>
+                                <div class="gallery-info">
+                                    <h3>Consultation médicale</h3>
+                                    <p>Soins médicaux essentiels pour les enfants de la communauté</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Santé</span>
+                                        <span class="tag">Médecine</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14.55.48.jpeg" alt="Membre de l'équipe">
+                    <div class="gallery-item" data-category="health">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.55.jpeg" alt="Vaccination">
                         <div class="gallery-overlay">
-                            <h3>Notre Équipe</h3>
-                            <p>Des professionnels dévoués</p>
+                                <div class="gallery-info">
+                                    <h3>Campagne de vaccination</h3>
+                                    <p>Protection des enfants contre les maladies évitables</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Santé</span>
+                                        <span class="tag">Vaccination</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 15.00.11.jpeg" alt="Membre de l'équipe">
+                    <!-- Nutrition Images -->
+                    <div class="gallery-item" data-category="nutrition">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.56.jpeg" alt="Repas scolaires">
                         <div class="gallery-overlay">
-                            <h3>Notre Équipe</h3>
-                            <p>Des professionnels dévoués</p>
+                                <div class="gallery-info">
+                                    <h3>Repas scolaires</h3>
+                                    <p>Distribution de repas nutritifs dans les écoles</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Nutrition</span>
+                                        <span class="tag">École</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 15.03.43.jpeg" alt="Membre de l'équipe">
+                    <div class="gallery-item" data-category="nutrition">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.57.jpeg" alt="Jardin communautaire">
                         <div class="gallery-overlay">
-                            <h3>Notre Équipe</h3>
-                            <p>Des professionnels dévoués</p>
+                                <div class="gallery-info">
+                                    <h3>Jardin communautaire</h3>
+                                    <p>Développement de jardins pour l'autonomie alimentaire</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Nutrition</span>
+                                        <span class="tag">Agriculture</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 15.05.10.jpeg" alt="Membre de l'équipe">
+                    <!-- Community Images -->
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.58.jpeg" alt="Formation communautaire">
                         <div class="gallery-overlay">
-                            <h3>Notre Équipe</h3>
-                            <p>Des professionnels dévoués</p>
+                                <div class="gallery-info">
+                                    <h3>Formation communautaire</h3>
+                                    <p>Sessions de formation pour les membres de la communauté</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communautaire</span>
+                                        <span class="tag">Formation</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="team">
-                        <img src="images/teams/WhatsApp Image 2025-09-14 at 14 2.55.48.jpg" alt="Membre de l'équipe">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.05.59.jpeg" alt="Équipe sur le terrain">
                         <div class="gallery-overlay">
-                            <h3>Notre Équipe</h3>
-                            <p>Des professionnels dévoués</p>
+                                <div class="gallery-info">
+                                    <h3>Équipe sur le terrain</h3>
+                                    <p>Notre équipe dévouée en action dans les communautés</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Équipe</span>
+                                        <span class="tag">Terrain</span>
                         </div>
                     </div>
-
-                    <!-- Children Photos -->
-                    <div class="gallery-item" data-category="children">
-                        <img src="images/kids-img-1.png" alt="Enfants heureux">
-                        <div class="gallery-overlay">
-                            <h3>Enfants Heureux</h3>
-                            <p>Le sourire de nos enfants</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="children">
-                        <img src="images/kids-img-2.png" alt="Enfants à l'école">
-                        <div class="gallery-overlay">
-                            <h3>Éducation</h3>
-                            <p>Apprendre avec joie</p>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="children">
-                        <img src="images/kids-img-3.png" alt="Enfants jouant">
+                    <!-- More images -->
+                    <div class="gallery-item" data-category="education">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.00.jpeg" alt="Matériel scolaire">
                         <div class="gallery-overlay">
-                            <h3>Jeux et Loisirs</h3>
-                            <p>Moment de détente</p>
+                                <div class="gallery-info">
+                                    <h3>Distribution de matériel</h3>
+                                    <p>Fourniture de matériel scolaire aux enfants</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Éducation</span>
+                                        <span class="tag">Matériel</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="children">
-                        <img src="images/kids-img-4.png" alt="Enfants ensemble">
+                    <div class="gallery-item" data-category="health">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.02.jpeg" alt="Soins de santé">
                         <div class="gallery-overlay">
-                            <h3>Solidarité</h3>
-                            <p>Ensemble nous sommes plus forts</p>
-                        </div>
-                    </div>
-
-                    <!-- Activities Photos -->
-                    <div class="gallery-item" data-category="activities">
-                        <img src="images/school-kids-1.png" alt="Activités scolaires">
-                        <div class="gallery-overlay">
-                            <h3>Activités Scolaires</h3>
-                            <p>Apprendre en s'amusant</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="activities">
-                        <img src="images/school-kids-2.png" alt="École">
-                        <div class="gallery-overlay">
-                            <h3>Notre École</h3>
-                            <p>Un environnement sûr</p>
+                                <div class="gallery-info">
+                                    <h3>Soins de santé</h3>
+                                    <p>Accès aux soins médicaux essentiels</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Santé</span>
+                                        <span class="tag">Soins</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="images/school-kids-3.png" alt="Cours">
+                    <div class="gallery-item" data-category="nutrition">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.03.jpeg" alt="Alimentation">
                         <div class="gallery-overlay">
-                            <h3>Cours en Action</h3>
-                            <p>Éducation de qualité</p>
+                                <div class="gallery-info">
+                                    <h3>Programme alimentaire</h3>
+                                    <p>Amélioration de la nutrition des enfants</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Nutrition</span>
+                                        <span class="tag">Alimentation</span>
+                        </div>
+                    </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="images/eating-kids-1.png" alt="Repas">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.04.jpeg" alt="Activités communautaires">
                         <div class="gallery-overlay">
-                            <h3>Repas Nutritifs</h3>
-                            <p>Nourrir les corps et les esprits</p>
+                                <div class="gallery-info">
+                                    <h3>Activités communautaires</h3>
+                                    <p>Engagement et participation de la communauté</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Activités</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="images/eating-kids-2.png" alt="Nourriture">
+                    <!-- Additional Education Images -->
+                    <div class="gallery-item" data-category="education">
+                        <div class="gallery-image">
+                            <img src="images/school-kids-1.png" alt="Enfants à l'école">
                         <div class="gallery-overlay">
-                            <h3>Nutrition</h3>
-                            <p>Des repas équilibrés</p>
+                                <div class="gallery-info">
+                                    <h3>Enfants à l'école</h3>
+                                    <p>Accès à l'éducation pour tous les enfants</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Éducation</span>
+                                        <span class="tag">Enfants</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
+                    <div class="gallery-item" data-category="education">
+                        <div class="gallery-image">
+                            <img src="images/school-kids-2.png" alt="Environnement scolaire">
+                        <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Environnement scolaire</h3>
+                                    <p>Création d'espaces d'apprentissage sûrs</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Éducation</span>
+                                        <span class="tag">Infrastructure</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="education">
+                        <div class="gallery-image">
+                            <img src="images/school-kids-3.png" alt="Activités scolaires">
+                        <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Activités scolaires</h3>
+                                    <p>Développement complet des enfants</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Éducation</span>
+                                        <span class="tag">Développement</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Health Images -->
+                    <div class="gallery-item" data-category="health">
+                        <div class="gallery-image">
                         <img src="images/doctor-kids-1.png" alt="Soins médicaux">
                         <div class="gallery-overlay">
-                            <h3>Soins Médicaux</h3>
-                            <p>Santé et bien-être</p>
+                                <div class="gallery-info">
+                                    <h3>Soins médicaux</h3>
+                                    <p>Accès aux soins de santé essentiels</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Santé</span>
+                                        <span class="tag">Médecine</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="images/doctor-kids-2.png" alt="Médecins">
+                    <div class="gallery-item" data-category="health">
+                        <div class="gallery-image">
+                            <img src="images/doctor-kids-2.png" alt="Soins pédiatriques">
                         <div class="gallery-overlay">
-                            <h3>Équipe Médicale</h3>
-                            <p>Professionnels de la santé</p>
+                                <div class="gallery-info">
+                                    <h3>Soins pédiatriques</h3>
+                                    <p>Santé et bien-être des enfants</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Santé</span>
+                                        <span class="tag">Pédiatrie</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- Réalisations -->
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.40.jpeg" alt="Nos réalisations">
+                    <!-- Additional Nutrition Images -->
+                    <div class="gallery-item" data-category="nutrition">
+                        <div class="gallery-image">
+                            <img src="images/eating-kids-1.png" alt="Repas nutritifs">
                         <div class="gallery-overlay">
-                            <h3>Nos Réalisations</h3>
-                            <p>Impact positif sur le terrain</p>
+                                <div class="gallery-info">
+                                    <h3>Repas nutritifs</h3>
+                                    <p>Nutrition équilibrée pour les enfants</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Nutrition</span>
+                                        <span class="tag">Repas</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.41.jpeg" alt="Programmes éducatifs">
+                    <div class="gallery-item" data-category="nutrition">
+                        <div class="gallery-image">
+                            <img src="images/eating-kids-2.png" alt="Alimentation saine">
                         <div class="gallery-overlay">
-                            <h3>Programmes Éducatifs</h3>
-                            <p>Éducation pour tous</p>
+                                <div class="gallery-info">
+                                    <h3>Alimentation saine</h3>
+                                    <p>Accès à une nutrition adéquate</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Nutrition</span>
+                                        <span class="tag">Santé</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.49.jpeg" alt="Activités communautaires">
+                    <!-- Additional Community Images -->
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/kids-img-1.png" alt="Enfants heureux">
                         <div class="gallery-overlay">
-                            <h3>Activités Communautaires</h3>
-                            <p>Engagement local</p>
+                                <div class="gallery-info">
+                                    <h3>Enfants heureux</h3>
+                                    <p>Impact positif de nos programmes</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Bonheur</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.55.jpeg" alt="Soins de santé">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/kids-img-2.png" alt="Activités communautaires">
                         <div class="gallery-overlay">
-                            <h3>Soins de Santé</h3>
-                            <p>Santé pour tous</p>
+                                <div class="gallery-info">
+                                    <h3>Activités communautaires</h3>
+                                    <p>Renforcement des liens communautaires</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Liens</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.56.jpeg" alt="Nutrition">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/kids-img-3.png" alt="Engagement communautaire">
                         <div class="gallery-overlay">
-                            <h3>Programme Nutrition</h3>
-                            <p>Nourrir les enfants</p>
+                                <div class="gallery-info">
+                                    <h3>Engagement communautaire</h3>
+                                    <p>Participation active des communautés</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Engagement</span>
+                                    </div>
+                                </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.57.jpeg" alt="Formation">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/kids-img-4.png" alt="Solidarité">
                         <div class="gallery-overlay">
-                            <h3>Formation</h3>
-                            <p>Développement des compétences</p>
+                                <div class="gallery-info">
+                                    <h3>Solidarité</h3>
+                                    <p>Esprit de communauté et d'entraide</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Solidarité</span>
+                        </div>
+                    </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.58.jpeg" alt="Soutien communautaire">
+                    <!-- More realisations images -->
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.05.jpeg" alt="Programmes sociaux">
                         <div class="gallery-overlay">
-                            <h3>Soutien Communautaire</h3>
-                            <p>Accompagnement des familles</p>
+                                <div class="gallery-info">
+                                    <h3>Programmes sociaux</h3>
+                                    <p>Support aux familles vulnérables</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Social</span>
+                        </div>
+                    </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.59.jpeg" alt="Projets locaux">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.06.jpeg" alt="Activités sociales">
                         <div class="gallery-overlay">
-                            <h3>Projets Locaux</h3>
-                            <p>Développement durable</p>
+                                <div class="gallery-info">
+                                    <h3>Activités sociales</h3>
+                                    <p>Engagement social et communautaire</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Social</span>
+                        </div>
+                    </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.00.jpeg" alt="Équipements">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.07.jpeg" alt="Impact social">
                         <div class="gallery-overlay">
-                            <h3>Équipements</h3>
-                            <p>Matériel et ressources</p>
+                                <div class="gallery-info">
+                                    <h3>Impact social</h3>
+                                    <p>Changement positif dans les communautés</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Impact</span>
+                        </div>
+                    </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.02.jpeg" alt="Infrastructures">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.08.jpeg" alt="Développement social">
                         <div class="gallery-overlay">
-                            <h3>Infrastructures</h3>
-                            <p>Bâtiments et installations</p>
+                                <div class="gallery-info">
+                                    <h3>Développement social</h3>
+                                    <p>Amélioration des conditions de vie</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Développement</span>
+                        </div>
+                    </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- More Activities -->
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.03.jpeg" alt="Formation professionnelle">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.09.jpeg" alt="Engagement social">
                         <div class="gallery-overlay">
-                            <h3>Formation Professionnelle</h3>
-                            <p>Développement des compétences</p>
+                                <div class="gallery-info">
+                                    <h3>Engagement social</h3>
+                                    <p>Participation active des communautés</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Engagement</span>
+                        </div>
+                    </div>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.04.jpeg" alt="Activités sportives">
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="images/realisations/WhatsApp Image 2025-09-14 at 14.06.11.jpeg" alt="Programmes communautaires">
                         <div class="gallery-overlay">
-                            <h3>Activités Sportives</h3>
-                            <p>Sport et loisirs pour les enfants</p>
+                                <div class="gallery-info">
+                                    <h3>Programmes communautaires</h3>
+                                    <p>Développement durable des communautés</p>
+                                    <div class="gallery-tags">
+                                        <span class="tag">Communauté</span>
+                                        <span class="tag">Durable</span>
                         </div>
                     </div>
-                    
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.05.jpeg" alt="Cérémonies">
-                        <div class="gallery-overlay">
-                            <h3>Cérémonies</h3>
-                            <p>Événements spéciaux</p>
+                                <button class="gallery-btn" onclick="openModal(this)">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.06.jpeg" alt="Distribution de matériel">
-                        <div class="gallery-overlay">
-                            <h3>Distribution de Matériel</h3>
-                            <p>Fournitures scolaires et médicales</p>
                         </div>
                     </div>
-                    
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.07.jpeg" alt="Travaux communautaires">
-                        <div class="gallery-overlay">
-                            <h3>Travaux Communautaires</h3>
-                            <p>Construction et rénovation</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.08.jpeg" alt="Sensibilisation">
-                        <div class="gallery-overlay">
-                            <h3>Sensibilisation</h3>
-                            <p>Éducation communautaire</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.09.jpeg" alt="Réunions">
-                        <div class="gallery-overlay">
-                            <h3>Réunions Communautaires</h3>
-                            <p>Planification et coordination</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="activities">
-                        <img src="../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.06.11.jpeg" alt="Événements spéciaux">
-                        <div class="gallery-overlay">
-                            <h3>Événements Spéciaux</h3>
-                            <p>Fêtes et célébrations</p>
-                        </div>
-                    </div>
+        </section>
 
-                    <!-- Events Section -->
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/school-kids-1.png" alt="Journée de l'éducation">
-                        <div class="gallery-overlay">
-                            <h3>Journée de l'Éducation</h3>
-                            <p>Célébration de l'apprentissage</p>
+        <!-- Impact Section -->
+        <section class="impact-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Notre impact</span>
+                    </div>
+                    <h2>Des résultats concrets</h2>
+                    <p>Chaque image témoigne de notre engagement et de notre impact</p>
+                </div>
+                <div class="impact-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">2,500+</div>
+                            <div class="stat-label">Enfants scolarisés</div>
                         </div>
                     </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/school-kids-2.png" alt="Cérémonie de remise">
-                        <div class="gallery-overlay">
-                            <h3>Cérémonie de Remise</h3>
-                            <p>Distribution de prix et diplômes</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">3,200+</div>
+                            <div class="stat-label">Consultations médicales</div>
                         </div>
                     </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/school-kids-3.png" alt="Festival des enfants">
-                        <div class="gallery-overlay">
-                            <h3>Festival des Enfants</h3>
-                            <p>Journée de joie et de divertissement</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">15,000+</div>
+                            <div class="stat-label">Repas servis</div>
                         </div>
                     </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/eating-kids-1.png" alt="Journée nutrition">
-                        <div class="gallery-overlay">
-                            <h3>Journée Nutrition</h3>
-                            <p>Sensibilisation à l'alimentation</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-home"></i>
                         </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/eating-kids-2.png" alt="Cuisine communautaire">
-                        <div class="gallery-overlay">
-                            <h3>Cuisine Communautaire</h3>
-                            <p>Préparation de repas ensemble</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/doctor-kids-1.png" alt="Journée santé">
-                        <div class="gallery-overlay">
-                            <h3>Journée Santé</h3>
-                            <p>Consultations gratuites</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/doctor-kids-2.png" alt="Campagne vaccination">
-                        <div class="gallery-overlay">
-                            <h3>Campagne de Vaccination</h3>
-                            <p>Protection contre les maladies</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/kids-img-1.png" alt="Fête de fin d'année">
-                        <div class="gallery-overlay">
-                            <h3>Fête de Fin d'Année</h3>
-                            <p>Célébration des réussites</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/kids-img-2.png" alt="Journée sportive">
-                        <div class="gallery-overlay">
-                            <h3>Journée Sportive</h3>
-                            <p>Compétitions et jeux</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/kids-img-3.png" alt="Spectacle des enfants">
-                        <div class="gallery-overlay">
-                            <h3>Spectacle des Enfants</h3>
-                            <p>Talents et créativité</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item" data-category="events">
-                        <img src="images/kids-img-4.png" alt="Assemblée générale">
-                        <div class="gallery-overlay">
-                            <h3>Assemblée Générale</h3>
-                            <p>Réunion de la communauté</p>
+                        <div class="stat-content">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Projets communautaires</div>
                         </div>
                     </div>
                 </div>
@@ -506,20 +764,33 @@
         </section>
     </main>
 
+    <!-- Modal for image viewing -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <div id="modalTags"></div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footer__container container">
             <div class="quick-links">
                 <h2>Liens rapides</h2>
                 <a href="index.html">Accueil</a>
-                <a href="about.html">À propos</a>
+                <a href="../about.html">À propos</a>
                 <a href="contact.html">Contact</a>
-                <a href="gallery.html">Galerie</a>
+                <a href="#">Galerie</a>
                 <a href="donate.html#donationCard">Donner</a>
             </div>
             <div class="contact-links">
                 <h2>Rejoignez-nous sur</h2>
                 <p>+243 991 475 836</p>
-                <p>info@lightandsalt.com</p>
+                <p>contact@lightandsalthumanitarian.org</p>
                 <div class="socials">
                     <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
@@ -540,4 +811,5 @@
     <script src="script.js"></script>
     <script src="gallery.js"></script>
 </body>
+</html>
 </html>

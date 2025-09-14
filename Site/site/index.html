@@ -83,6 +83,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
 
 </head>
 <body>
@@ -108,141 +109,237 @@
         </div>
     </nav>
 
-    <header class="header">
-        <div class="hero-carousel">
-            <div class="carousel-slide active">
-                <div class="slide-bg" style="background-image: url('images/kids-img-2.png')"></div>
-                <div class="slide-content">
-                    <h2>Construisons leur avenir</h2>
-                    <p>Au-delà de la faim, au-delà de la maladie, au-delà des limites : Libérer le pouvoir de chaque enfant</p>
-                    <div class="header__actions">
-                        <a href="about.html">En savoir plus...</a>
-                        <a href="donate.html#donationCard">Donner maintenant</a>
+    <!-- Hero Section -->
+    <section class="home-hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Faites la différence</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Construisons</span> leur avenir<br>
+                    <span class="highlight">ensemble</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Au-delà de la faim, au-delà de la maladie, au-delà des limites : 
+                    Libérer le pouvoir de chaque enfant en République Démocratique du Congo.
+                </p>
+                <div class="hero-actions">
+                    <a href="about.html" class="cta-primary">
+                        <i class="fa-solid fa-info-circle"></i>
+                        <span>En savoir plus</span>
+                    </a>
+                    <a href="donate.html#donationCard" class="cta-secondary">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Donner maintenant</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-child"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="1350">0</div>
+                            <div class="stat-label">Personnes aidées</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Bénévoles</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="7">0</div>
+                            <div class="stat-label">Années d'action</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="carousel-slide">
-                <div class="slide-bg" style="background-image: url('../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.40.jpeg')"></div>
-                <div class="slide-content">
-                    <h2>Nos Réalisations</h2>
-                    <p>Découvrez l'impact positif de nos programmes sur les communautés de l'est de la RDC</p>
-                    <div class="header__actions">
-                        <a href="gallery.html">Voir la galerie</a>
-                        <a href="donate.html#donationCard">Soutenir nos actions</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel-slide">
-                <div class="slide-bg" style="background-image: url('../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.41.jpeg')"></div>
-                <div class="slide-content">
-                    <h2>Éducation pour tous</h2>
-                    <p>Nous créons des environnements d'apprentissage sûrs et stimulants pour chaque enfant</p>
-                    <div class="header__actions">
-                        <a href="about.html">Nos programmes</a>
-                        <a href="contact.html">Nous rejoindre</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="carousel-slide">
-                <div class="slide-bg" style="background-image: url('../Blog/images/realisations/WhatsApp Image 2025-09-14 at 14.05.49.jpeg')"></div>
-                <div class="slide-content">
-                    <h2>Santé et Nutrition</h2>
-                    <p>Des soins médicaux essentiels et une nutrition adéquate pour le bien-être de chaque enfant</p>
-                    <div class="header__actions">
-                        <a href="about.html">En savoir plus</a>
-                        <a href="donate.html#donationCard">Contribuer</a>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="images/kids-img-2.png" alt="Enfants heureux" class="hero-image">
+                    <div class="floating-elements">
+                        <div class="floating-icon icon-1">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="floating-icon icon-3">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="carousel-indicators">
-            <span class="indicator active" data-slide="0"></span>
-            <span class="indicator" data-slide="1"></span>
-            <span class="indicator" data-slide="2"></span>
-            <span class="indicator" data-slide="3"></span>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
         </div>
-    </header>
+    </section>
 
     <main>
-        <div >
-            <div class="main-actions container">
-                <div class="make-action">
-                    <div class="action-icon">
-                        <i class="fa-solid fa-hand-holding-hand"></i>
+        <!-- Action Cards Section -->
+        <section class="action-cards-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-hands-holding-heart"></i>
+                        <span>Agissez maintenant</span>
                     </div>
-                    <h3 class="action-title">
-                        Faire un don
-                    </h3>
-                    <p>Si vous êtes en mesure de contribuer d'une manière quelconque à une meilleure vie pour ces enfants, saisissez cette chance en cliquant sur le bouton ci-dessous et en suivant les étapes</p>
-                
-                    <a href="donate.html#donationCard" class="action-btn">Donner maintenant</a>
+                    <h2>Comment nous aider</h2>
+                    <p>Rejoignez notre mission et faites la différence dans la vie des enfants vulnérables</p>
                 </div>
-                <div class="make-action">
-                    <div class="action-icon">
-                        <i class="fa-solid fa-hands-holding-child"></i>
+                <div class="action-cards-grid">
+                    <div class="action-card">
+                        <div class="card-header">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-hand-holding-hand"></i>
+                            </div>
+                            <div class="card-number">01</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Faire un don</h3>
+                            <p class="action-description">Votre générosité transforme des vies</p>
+                            <p>Si vous êtes en mesure de contribuer d'une manière quelconque à une meilleure vie pour ces enfants, saisissez cette chance en cliquant sur le bouton ci-dessous et en suivant les étapes.</p>
+                            <div class="action-impact">
+                                <div class="impact-item">
+                                    <span class="amount">20$</span>
+                                    <span class="description">= 10 repas</span>
+                                </div>
+                                <div class="impact-item">
+                                    <span class="amount">50$</span>
+                                    <span class="description">= 1 mois d'école</span>
+                                </div>
+                            </div>
+                            <a href="donate.html#donationCard" class="action-btn">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>Donner maintenant</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="action-title">
-                        Collecte de fonds
-                    </h3>
-                    <p>Nous prévoyons bientôt de lancer des événements de collecte de fonds tels que des jeux pour nous aider à atteindre nos objectifs, tout le montant collecté servira à nos activités sur le terrain</p>
-                
-                    <a href="donate.html#donationCard" class="action-btn">Contribuer</a>
-                </div>
-                <div class="make-action">
-                    <div class="action-icon">
-                        <i class="fa-solid fa-handshake-angle"></i>
+                    
+                    <div class="action-card">
+                        <div class="card-header">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-hands-holding-child"></i>
+                            </div>
+                            <div class="card-number">02</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Collecte de fonds</h3>
+                            <p class="action-description">Organisez des événements solidaires</p>
+                            <p>Nous prévoyons bientôt de lancer des événements de collecte de fonds tels que des jeux pour nous aider à atteindre nos objectifs, tout le montant collecté servira à nos activités sur le terrain.</p>
+                            <div class="action-impact">
+                                <div class="impact-item">
+                                    <span class="amount">100$</span>
+                                    <span class="description">= Soins médicaux</span>
+                                </div>
+                                <div class="impact-item">
+                                    <span class="amount">200$</span>
+                                    <span class="description">= Kit scolaire</span>
+                                </div>
+                            </div>
+                            <a href="donate.html#donationCard" class="action-btn">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>Contribuer</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="action-title">
-                        Bénévolat
-                    </h3>
-                    <p>Si vous souhaitez nous aider en faisant du bénévolat dans nos activités, n'hésitez pas à nous contacter en cliquant sur le bouton ci-dessous et nous vous recontacterons</p>
-                
-                    <a href="contact.html" class="action-btn">En savoir plus</a>
+                    
+                    <div class="action-card">
+                        <div class="card-header">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <div class="card-number">03</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Bénévolat</h3>
+                            <p class="action-description">Rejoignez notre équipe</p>
+                            <p>Si vous souhaitez nous aider en faisant du bénévolat dans nos activités, n'hésitez pas à nous contacter en cliquant sur le bouton ci-dessous et nous vous recontacterons.</p>
+                            <div class="action-impact">
+                                <div class="impact-item">
+                                    <span class="amount">1h</span>
+                                    <span class="description">= 1 sourire</span>
+                                </div>
+                                <div class="impact-item">
+                                    <span class="amount">1 jour</span>
+                                    <span class="description">= 1 vie changée</span>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="action-btn">
+                                <i class="fa-solid fa-users"></i>
+                                <span>En savoir plus</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="main-content">
-
-            <div class="left">
-                <img src="images/kids-img-4.png" alt="">
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-text">
+                        <div class="section-badge">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Notre mission</span>
+                        </div>
+                        <h2>Nous travaillons ensemble</h2>
+                        <p class="mission-lead">Avec nos partenaires, nous visons à assurer un avenir radieux à ceux qui sont défavorisés</p>
+                        <p>Dans la région orientale accidentée de la République Démocratique du Congo, au milieu des conflits prolongés, des guerres et des catastrophes où la vie peut être difficile, Light & Salt offre un havre d'espoir.</p>
+                        <div class="mission-values">
+                            <div class="value-item">
+                                <i class="fa-solid fa-utensils"></i>
+                                <h3>La faim ? Nous la combattons.</h3>
+                                <p>Nous fournissons des repas nutritifs dans les écoles et les communautés, assurant que les estomacs sont pleins et que les esprits peuvent se concentrer sur l'apprentissage.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fa-solid fa-stethoscope"></i>
+                                <h3>La maladie ? Nous la combattons.</h3>
+                                <p>Nous nous associons avec des professionnels de la santé pour fournir des soins médicaux essentiels, prévenir les maladies et construire des corps sains.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h3>L'éducation ? Nous y croyons.</h3>
+                                <p>Nous construisons des environnements d'apprentissage sûrs et stimulants, équipant les enfants des outils et des connaissances pour poursuivre leurs rêves.</p>
+                            </div>
+                        </div>
+                        <div class="mission-cta">
+                            <p><strong>Mais nous ne pouvons pas le faire seuls.</strong> Light & Salt prospère grâce au pouvoir du partenariat. Rejoignez-nous en tant que bénévole, donateur ou défenseur.</p>
+                            <a href="donate.html#donationCard" class="cta-btn">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>Rejoignez-nous</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mission-image">
+                        <img src="images/kids-img-4.png" alt="Notre mission">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
             </div>
-
-            <div class="right">
-                    <h2>Nous travaillons ensemble</h2>
-                    <div>
-                        <p class="title-secondary">Avec nos partenaires, nous visons à assurer un avenir radieux à ceux qui sont défavorisés</p>
-                    <p class="p-1">
-                        Dans la région orientale accidentée de la République Démocratique du Congo, au milieu des conflits prolongés, des guerres et des catastrophes où la vie peut être difficile, Light & Salt offre un havre d'espoir.
-                        Nous sommes une équipe d'individus dévoués travaillant aux côtés des communautés pour construire un avenir plus radieux pour les enfants et les familles.
-                    </p>
-
-                    <p class="p-1">
-                        <b>La faim ? Nous la combattons.</b>
-                        Nous fournissons des repas nutritifs dans les écoles et les communautés, assurant que les estomacs sont pleins et que les esprits peuvent se concentrer sur l'apprentissage.
-                    </p>
-                    <p class="p-1">
-                        <b>La maladie ? Nous la combattons.</b>
-                        Nous nous associons avec des professionnels de la santé pour fournir des soins médicaux essentiels, prévenir les maladies et construire des corps sains.
-                    </p>
-                    <p class="p-1">
-                        <b>L'éducation ? Nous y croyons.</b>
-                        Nous construisons des environnements d'apprentissage sûrs et stimulants, équipant les enfants des outils et des connaissances pour poursuivre leurs rêves.
-                    </p>
-                    <p class="p-1">
-                        <b>Mais nous ne pouvons pas le faire seuls.</b>
-                        Light & Salt prospère grâce au pouvoir du partenariat. Rejoignez-nous en tant que bénévole, donateur ou défenseur. Ensemble, nous pouvons briller plus fort et changer des vies dans l'est de la RDC.
-                    </p>
-                    <p class="p-1">
-                        <b>Ici, au milieu des défis, nous travaillons ensemble. Nous autonomisons. Nous nourrissons. Nous construisons. Nous sommes Light & Salt. Soyez la lumière. Soyez le sel.</b>
-                    </p>
-                    </div>    
-            </div>
-        </div>
+        </section>
 
         <!-- Programs Section -->
         <section class="programs-section">
@@ -444,7 +541,7 @@
             <div class="contact-links">
                 <h2>Rejoignez-nous sur</h2>
                 <p>+243 991 475 836</p>
-                <p>info@lightandsalt.com</p>
+                <p>contact@lightandsalthumanitarian.org</p>
                 <div class="socials">
                     <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>

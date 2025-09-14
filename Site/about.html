@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light &amp; Salt -- About</title>
+    <title>Light &amp; Salt -- À propos</title>
 
     <!-- ============== FONTAWESOME CDN ================= -->   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
+    <!-- ============== GOOGLE FONTS ================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="site/style.css">
+    <link rel="stylesheet" href="site/about.css">
 
 </head>
 <body>
@@ -23,11 +26,11 @@
             </div>
             <div class="nav__right">
                 <ul>
-                    <li><a href="index.html" >Home</a></li>
-                    <li><a href="#" class="nav__active">About</a></li>
-                    <li><a href="contact.html"> Contact</a></li>
-                    <li><a href="../Blog/index.html">Blog</a></li>
-                    <li><a href="donate.html" >Donate</a></li>
+                    <li><a href="site/index.html">Accueil</a></li>
+                    <li><a href="#" class="nav__active">À propos</a></li>
+                    <li><a href="site/contact.html">Contact</a></li>
+                    <li><a href="site/gallery.html">Galerie</a></li>
+                    <li><a href="site/donate.html">Donner</a></li>
                 </ul>
             </div>
             <button id="show__navbar-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
@@ -36,9 +39,66 @@
     </nav>
 
     <main>
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>À Propos de Light & Salt</h1>
+                    <p class="hero-subtitle">Nous croyons que chaque enfant mérite un avenir radieux</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Communautés servies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Vies transformées</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-text">
+                        <h2>Notre Mission</h2>
+                        <p class="mission-lead">Transformer des vies, une communauté à la fois</p>
+                        <p>Light & Salt est une organisation humanitaire dédiée à l'amélioration des conditions de vie des enfants et familles vulnérables dans l'est de la République Démocratique du Congo. Nous travaillons sans relâche pour créer un monde où chaque enfant a accès à l'éducation, à la santé et à la nutrition.</p>
+                        <div class="mission-values">
+                            <div class="value-item">
+                                <i class="fa-solid fa-heart"></i>
+                                <h3>Compassion</h3>
+                                <p>Nous agissons avec empathie et bienveillance envers chaque personne que nous servons.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fa-solid fa-handshake"></i>
+                                <h3>Intégrité</h3>
+                                <p>Nous maintenons les plus hauts standards d'honnêteté et de transparence dans toutes nos actions.</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fa-solid fa-users"></i>
+                                <h3>Collaboration</h3>
+                                <p>Nous croyons en la force du partenariat et de la collaboration communautaire.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-image">
+                        <img src="images/kids-img-1.png" alt="Notre mission">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container">
             <div class="head">
-                <h2>We believe every child deserves a bright future</h2>
+                <h2>Nos Domaines d'Intervention</h2>
             </div>
             <div class="overview">
                 <div class="overview__item">
@@ -46,9 +106,9 @@
                         <img src="images/school-kids-2.png" alt="">
                     </div>
                     <div class="overview__content">
-                        <h2>From Vulnerable to Valued: Building Safe Havens for Education</h2>
-                        <p>Imagine a child, eyes wide with curiosity, yearning to learn. But their reality is one of instability and fear. War, poverty, or displacement have stolen their sense of security.
-                            We step in, providing the nurturing environment, the quality education, and the support for vulnerable children to reach their full potential. Every endeavor is a bridge towards a brighter future, where knowledge becomes their shield and opportunity their compass. Join us in creating these sanctuaries of learning, and watch as hope ignites in the eyes of a child. 
+                        <h2>De vulnérable à valorisé : Construire des havres de paix pour l'éducation</h2>
+                        <p>Imaginez un enfant, les yeux grands ouverts de curiosité, désireux d'apprendre. Mais sa réalité est celle de l'instabilité et de la peur. La guerre, la pauvreté ou le déplacement ont volé son sentiment de sécurité.
+                            Nous intervenons, fournissant l'environnement nourricier, l'éducation de qualité et le soutien nécessaires aux enfants vulnérables pour atteindre leur plein potentiel. Chaque effort est un pont vers un avenir plus radieux, où la connaissance devient leur bouclier et l'opportunité leur boussole. Rejoignez-nous pour créer ces sanctuaires d'apprentissage, et regardez l'espoir s'allumer dans les yeux d'un enfant.
                         </p>
                     </div>
                 </div>
@@ -57,9 +117,9 @@
                         <img src="images/doctor-kids-1.png" alt="">
                     </div>
                     <div class="overview__content">
-                        <h2>Bridging the Gap to Wellness: Accessible Healthcare for Vulnerable Children</h2>
-                        <p>Childhood shouldn't be defined by illness. Yet, for many vulnerable children, access to vital medical care can be a distant dream. We try to bridge that gap
-                            With a variety of actions, we want to ensure no child is left behind. We partner with communities, equip dedicated medical professionals, and provide the resources needed to nurture healthy bodies and thriving spirits. With your help, we can rewrite the narrative of childhood, replacing vulnerability with resilience, and pain with the promise of a healthy tomorrow.
+                        <h2>Combler l'écart vers le bien-être : Soins de santé accessibles pour les enfants vulnérables</h2>
+                        <p>L'enfance ne devrait pas être définie par la maladie. Pourtant, pour de nombreux enfants vulnérables, l'accès aux soins médicaux vitaux peut être un rêve lointain. Nous essayons de combler cet écart.
+                            Avec une variété d'actions, nous voulons nous assurer qu'aucun enfant n'est laissé pour compte. Nous nous associons avec les communautés, équipons des professionnels de la santé dévoués et fournissons les ressources nécessaires pour nourrir des corps sains et des esprits florissants. Avec votre aide, nous pouvons réécrire le récit de l'enfance, remplacer la vulnérabilité par la résilience, et la douleur par la promesse d'un demain en bonne santé.
                         </p>
                     </div>
                 </div>
@@ -68,9 +128,9 @@
                         <img src="images/eating-kids-2.png" alt="">
                     </div>
                     <div class="overview__content">
-                        <h2>Breaking the Cycle of Hunger: Investing in a Child's Right to Nutrition</h2>
+                        <h2>Briser le cycle de la faim : Investir dans le droit à la nutrition d'un enfant</h2>
                         <p>
-                            For a child, an empty stomach can mean a dimmed future. We fight against that hunger, filling plates with nourishment and hearts with hope. Our aim is to ensure that no child faces the day on an empty stomach. With each bite, we build strong bodies, clear minds, and the resilience to chase their dreams. Join us in creating a world where hunger is a distant memory, and every child thrives on the foundation of good food and vibrant health.
+                            Pour un enfant, un estomac vide peut signifier un avenir assombri. Nous luttons contre cette faim, remplissant les assiettes de nourriture et les cœurs d'espoir. Notre objectif est de nous assurer qu'aucun enfant ne commence la journée le ventre vide. Avec chaque bouchée, nous construisons des corps forts, des esprits clairs et la résilience pour poursuivre leurs rêves. Rejoignez-nous pour créer un monde où la faim est un souvenir lointain, et chaque enfant prospère sur la base d'une bonne nourriture et d'une santé vibrante.
                         </p>
                     </div>
                 </div>
@@ -82,63 +142,193 @@
                 <img src="images/donate-cta-3.png" alt="">
             </div> -->
             <div class="cta__container container">
-                <h2>Change a life, Donate today</h2>
-                <p>Your help can in shaping a better future for a child, just by making a donation however small or big it is, its impact is the best we can hope for</p>
+                <h2>Changez une vie, Donnez aujourd'hui</h2>
+                <p>Votre aide peut façonner un meilleur avenir pour un enfant, simplement en faisant un don, aussi petit ou grand soit-il, son impact est le meilleur que nous puissions espérer</p>
                 <div>
-                    <a href="donate.html#donationCard" class="cta-donate-btn"> Donate now</a>
+                    <a href="site/donate.html#donationCard" class="cta-donate-btn">Donner maintenant</a>
                 </div>
                 
             </div>
         </div>
+        <!-- Impact Section -->
+        <section class="impact-section">
+            <div class="container">
+                <h2>Notre Impact</h2>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Éducation</h3>
+                        <p class="impact-number">2,500+</p>
+                        <p class="impact-description">Enfants scolarisés</p>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3>Nutrition</h3>
+                        <p class="impact-number">15,000+</p>
+                        <p class="impact-description">Repas servis</p>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3>Santé</h3>
+                        <p class="impact-number">3,200+</p>
+                        <p class="impact-description">Consultations médicales</p>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa-solid fa-home"></i>
+                        </div>
+                        <h3>Communauté</h3>
+                        <p class="impact-number">25+</p>
+                        <p class="impact-description">Projets communautaires</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>Notre Histoire</h2>
+                        <p class="story-lead">De l'espoir à l'action</p>
+                        <p>Fondée en 2017, Light & Salt est née de la vision de créer un changement durable dans les communautés les plus vulnérables de l'est de la RDC. Notre nom "Light & Salt" reflète notre mission : être la lumière qui guide vers un avenir meilleur et le sel qui préserve et enrichit les vies.</p>
+                        <p>Depuis nos débuts modestes avec une petite équipe de bénévoles passionnés, nous avons grandi pour devenir une organisation reconnue qui touche des milliers de vies chaque année. Notre approche holistique combine éducation, santé et nutrition pour créer un impact durable.</p>
+                        <div class="story-highlights">
+                            <div class="highlight">
+                                <span class="year">2017</span>
+                                <span class="event">Fondation de Light & Salt</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="year">2019</span>
+                                <span class="event">Premier programme d'éducation</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="year">2021</span>
+                                <span class="event">Expansion des services de santé</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="year">2024</span>
+                                <span class="event">Reconnaissance internationale</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-image">
+                        <img src="images/kids-img-3.png" alt="Notre histoire">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container">
             <div class="team">
                 <div class="team-section__head">
-                    <h2>Our team</h2>
+                    <h2>Notre équipe</h2>
+                    <p class="team-intro">Nous travaillons avec une équipe talentueuse et dévouée qui nous aide à définir et atteindre nos objectifs</p>
                 </div>
-                
-                <p>We work with a talentful and dedicate team that helps us in setting and achieving our goals </p>
                 <div class="team__members">
                     <div class="team__member">
                         <div class="team__member-image">
-                            <img src="images/team-member-1.png" alt="">
+                            <img src="images/teams/WhatsApp Image 2025-09-14 at 14.52.37.jpeg" alt="Coordinateur National">
                         </div>
                         <div class="team__member-info">
-                            <h3 class="member-name"> Christian Hamuli</h3>
-                            <p class="member-role">Human Resource Manager</p>
-                            <p class="member-history">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nostrum.</p>
+                            <h3 class="member-name">Jailton LUANDA</h3>
+                            <p class="member-role">Coordinateur National</p>
+                            <p class="member-history">Leader visionnaire avec une expertise approfondie dans la coordination des programmes nationaux et la gestion stratégique des opérations humanitaires.</p>
                         </div>
                         
                     </div>
                     <div class="team__member">
                         <div class="team__member-image">
-                            <img src="images/team-member-2.png" alt="">
+                            <img src="images/teams/WhatsApp Image 2025-09-14 at 14.53.05.jpeg" alt="Point focal PSEA">
                         </div>
                         <div class="team__member-info">
-                            <h3 class="member-name"> Christian Hamuli</h3>
-                            <p class="member-role">Human Resource Manager</p>
-                            <p class="member-history">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nostrum.</p>
+                            <h3 class="member-name">Grâce BUSIME</h3>
+                            <p class="member-role">Point focal PSEA</p>
+                            <p class="member-history">Spécialiste en protection contre l'exploitation et les abus sexuels, elle assure la sécurité et le bien-être de tous les bénéficiaires de nos programmes.</p>
                         </div>
                         
                     </div>
                     <div class="team__member">
                         <div class="team__member-image">
-                            <img src="images/team-member-3.png" alt="">
+                            <img src="images/teams/WhatsApp Image 2025-09-14 at 14.53.45.jpeg" alt="Point focal Sécurité Alimentaire">
                         </div>
                         <div class="team__member-info">
-                            <h3 class="member-name"> Christian Hamuli</h3>
-                            <p class="member-role">Human Resource Manager</p>
-                            <p class="member-history">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nostrum.</p>
+                            <h3 class="member-name">MUMBERE Silas</h3>
+                            <p class="member-role">Point focal Sécurité Alimentaire</p>
+                            <p class="member-history">Expert en sécurité alimentaire, il coordonne nos initiatives pour garantir l'accès à une nutrition adéquate et durable pour les communautés vulnérables.</p>
                         </div>
                         
                     </div>
                     <div class="team__member">
                         <div class="team__member-image">
-                            <img src="images/team-member-4.png" alt="">
+                            <img src="images/teams/WhatsApp Image 2025-09-14 at 14.55.48.jpeg" alt="Superviseur Santé-Nutrition">
                         </div>
                         <div class="team__member-info">
-                            <h3 class="member-name"> Christian Hamuli</h3>
-                            <p class="member-role">Human Resource Manager</p>
-                            <p class="member-history">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nostrum.</p>
+                            <h3 class="member-name">Bushu Faustin</h3>
+                            <p class="member-role">Superviseur Santé-Nutrition</p>
+                            <p class="member-history">Superviseur expérimenté en santé et nutrition, il dirige nos programmes de santé communautaire et de nutrition pour améliorer le bien-être des enfants.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="images/teams/WhatsApp Image 2025-09-14 at 15.00.11.jpeg" alt="Chargée de communication et Médias">
+                        </div>
+                        <div class="team__member-info">
+                            <h3 class="member-name">Amunazo NSAMAMBA Caroline</h3>
+                            <p class="member-role">Chargée de communication et Médias</p>
+                            <p class="member-history">Spécialiste en communication et médias, elle développe nos stratégies de communication et assure la visibilité de nos actions sur le terrain.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="images/teams/WhatsApp Image 2025-09-14 at 15.03.43.jpeg" alt="Officier Nutrition">
+                        </div>
+                        <div class="team__member-info">
+                            <h3 class="member-name">Fiston SELEMANI</h3>
+                            <p class="member-role">Officier Nutrition</p>
+                            <p class="member-history">Officier nutrition dédié, il met en œuvre nos programmes nutritionnels et assure le suivi de l'état nutritionnel des enfants bénéficiaires.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="images/teams/WhatsApp Image 2025-09-14 at 15.05.10.jpeg" alt="Chef de projet Éducation">
+                        </div>
+                        <div class="team__member-info">
+                            <h3 class="member-name">Louise Katuva</h3>
+                            <p class="member-role">Chef de projet Éducation</p>
+                            <p class="member-history">Chef de projet éducation passionnée, elle dirige nos initiatives éducatives pour garantir un accès équitable à une éducation de qualité.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="images/teams/cecile.jpeg" alt="Chargée de Santé Publique">
+                        </div>
+                        <div class="team__member-info">
+                            <h3 class="member-name">Cécile Katungu</h3>
+                            <p class="member-role">Chargée de Santé Publique</p>
+                            <p class="member-history">Spécialiste en santé publique, elle coordonne nos programmes de santé communautaire et assure la mise en œuvre de nos initiatives de prévention et de soins de santé.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="images/teams/kasereka.jpeg" alt="Chargé des programmes">
+                        </div>
+                        <div class="team__member-info">
+                            <h3 class="member-name">Kasereka Katsuva Celestin</h3>
+                            <p class="member-role">Chargé des programmes</p>
+                            <p class="member-history">Expert en gestion de programmes, il coordonne et supervise l'implémentation de nos initiatives sur le terrain, assurant l'efficacité et l'impact de nos actions humanitaires.</p>
                         </div>
                         
                     </div>
@@ -153,17 +343,17 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="quick-links">
-                <h2>Quick links</h2>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="../Blog/index.html">Blog</a>
-                <a href="donate.html#donationCard">Donate</a>
+                <h2>Liens rapides</h2>
+                <a href="site/index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="site/contact.html">Contact</a>
+                <a href="site/gallery.html">Galerie</a>
+                <a href="site/donate.html#donationCard">Donner</a>
             </div>
             <div class="contact-links">
-                <h2>Joins us on</h2>
-                <p>+243990000000</p>
-                <p>info@lightandsalt.com</p>
+                <h2>Rejoignez-nous sur</h2>
+                <p>+243 991 475 836</p>
+                <p>contact@lightandsalthumanitarian.org</p>
                 <div class="socials">
                     <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
@@ -171,16 +361,17 @@
                     <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <div>
-                    <a href="donate.html#donationCard" class="btn-primary">Donate now</a>
+                    <a href="site/donate.html#donationCard" class="btn-primary">Donner maintenant</a>
                 </div>
             </div>
             
             
         </div>
         <div class="footer__copyright">
-            <p>&copy; Gitop Tech 2024 </p>
+            <p>&copy; Light &amp; Salt 2024 </p>
+            <p class="design-credit">Designed by <a href="https://zachsoft.web.app/" target="_blank" rel="noopener noreferrer">ZachSoft</a></p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="site/script.js"></script>
 </body>
 </html>
