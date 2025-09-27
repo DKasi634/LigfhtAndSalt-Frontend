@@ -159,9 +159,10 @@ function animateStats() {
     
     statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
-        const suffix = stat.textContent.replace(/\d/g, '');
+        if (isNaN(target)) return; // Skip if no valid target
+        
         let currentNumber = 0;
-        const increment = target / 60;
+        const increment = target / 100;
         
         const timer = setInterval(() => {
             currentNumber += increment;
@@ -169,8 +170,8 @@ function animateStats() {
                 currentNumber = target;
                 clearInterval(timer);
             }
-            stat.textContent = Math.floor(currentNumber) + suffix;
-        }, 25);
+            stat.textContent = Math.floor(currentNumber);
+        }, 20);
     });
 }
 

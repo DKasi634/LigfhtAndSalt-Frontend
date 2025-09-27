@@ -1,0 +1,581 @@
+/* ============= PARTNERS PAGE STYLES ============= */
+
+/* Hero Section */
+.partners-hero {
+    background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-blue-variant) 100%);
+    color: var(--color-white);
+    padding: 8rem 0 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.partners-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.partners-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.partners-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.partners-hero .hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partners-hero .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.partners-hero .stat-item {
+    text-align: center;
+}
+
+.partners-hero .stat-number {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-yellow);
+    margin-bottom: 0.5rem;
+}
+
+.partners-hero .stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+/* Partners Introduction */
+.partners-intro {
+    padding: 6rem 0;
+    background: var(--color-white);
+}
+
+.intro-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.intro-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    background: var(--color-light);
+    border-radius: 2rem;
+    transition: var(--transition-1);
+}
+
+.highlight-item:hover {
+    background: var(--color-blue);
+    color: var(--color-white);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.highlight-item i {
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    transition: var(--transition-1);
+}
+
+.highlight-item:hover i {
+    color: var(--color-white);
+}
+
+.highlight-item span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* International Partners */
+.international-partners {
+    padding: 6rem 0;
+    background: var(--color-light);
+}
+
+.local-partners {
+    padding: 6rem 0;
+    background: var(--color-white);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-gray);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.partner-card {
+    background: var(--color-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-1);
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-blue);
+}
+
+.partner-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-light);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: var(--transition-1);
+}
+
+.partner-card:hover .partner-logo {
+    background: var(--color-blue-light);
+    transform: scale(1.05);
+}
+
+.partner-logo img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: var(--transition-1);
+}
+
+.partner-card:hover .partner-logo img {
+    transform: scale(1.1);
+}
+
+.partner-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.partner-description {
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.partner-focus {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.focus-tag {
+    background: var(--color-blue);
+    color: var(--color-white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: var(--transition-1);
+}
+
+.partner-card:hover .focus-tag {
+    background: var(--color-yellow);
+    color: var(--color-blue);
+}
+
+/* Partnership Impact */
+.partnership-impact {
+    padding: 6rem 0;
+    background: var(--color-light);
+}
+
+.impact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.impact-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.impact-lead {
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.impact-text p {
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.impact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.impact-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.impact-list i {
+    color: var(--color-blue);
+    font-size: 1.1rem;
+}
+
+.impact-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.stat-box {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition-1);
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--color-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-icon i {
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-content .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-blue);
+    line-height: 1;
+}
+
+.stat-content .stat-label {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    font-weight: 500;
+}
+
+/* Call to Action */
+.partners-cta {
+    padding: 6rem 0;
+    background: var(--color-blue);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition-1);
+    box-shadow: var(--shadow-md);
+}
+
+.cta-btn.primary {
+    background: var(--color-white);
+    color: var(--color-blue);
+    border: 2px solid var(--color-white);
+}
+
+.cta-btn.primary:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-btn.secondary {
+    background: var(--color-yellow);
+    color: var(--color-blue);
+    border: 2px solid var(--color-yellow);
+}
+
+.cta-btn.secondary:hover {
+    background: transparent;
+    color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-btn i {
+    font-size: 1.1rem;
+}
+
+/* ============= RESPONSIVE DESIGN ============= */
+
+@media screen and (max-width: 1024px) {
+    .partners-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .partners-hero .hero-stats {
+        gap: 2rem;
+    }
+    
+    .intro-highlights {
+        gap: 2rem;
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .impact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partners-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .partners-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .partners-hero .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .partners-hero .hero-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .intro-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .intro-highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partner-card {
+        padding: 1.5rem;
+    }
+    
+    .partner-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .impact-text h2 {
+        font-size: 2rem;
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .partners-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .partners-hero .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .intro-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .partner-card {
+        padding: 1rem;
+    }
+    
+    .partner-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .impact-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

@@ -210,21 +210,20 @@ function animateStats() {
     const statNumbers = document.querySelectorAll('.stat-number');
     
     statNumbers.forEach(stat => {
-        const text = stat.textContent;
-        const number = parseInt(text.replace(/[^\d]/g, ''));
-        const suffix = text.replace(/[\d]/g, '');
+        const target = parseInt(stat.getAttribute('data-target'));
+        if (isNaN(target)) return; // Skip if no valid target
         
-        let currentNumber = 0;
-        const increment = number / 60;
+        const increment = target / 100; // Animation duration
+        let current = 0;
         
         const timer = setInterval(() => {
-            currentNumber += increment;
-            if (currentNumber >= number) {
-                currentNumber = number;
+            current += increment;
+            if (current >= target) {
+                current = target;
                 clearInterval(timer);
             }
-            stat.textContent = Math.floor(currentNumber) + suffix;
-        }, 25);
+            stat.textContent = Math.floor(current);
+        }, 20);
     });
 }
 
